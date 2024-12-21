@@ -11,7 +11,7 @@ const Experience = ({ name }) => {
                 <input id="ac-work-1" name="accordion-work" type="radio" checked={true} />
                 <label for="ac-work-1">Developer · <i>Infinica a Doxee Company, Vienna, Austria</i> · <span
                         class="experience-subsection-year">November 2022 - Present</span></label>
-                <div class="ac-medium">
+                <div>
                     <div class="experience-panel">
                         <div class="panel-body">
                             <ul>
@@ -53,7 +53,7 @@ const Experience = ({ name }) => {
                 <input id="ac-work-2" name="accordion-work" type="radio" />
                 <label for="ac-work-2">Quality Management Intern · <i>BAWAG P.S.K., Vienna, Austria</i> · <span>July
                         2019 - August 2019</span></label>
-                <div class="ac-medium">
+                <div class="">
                     <div class="panel-body">
                         <ul>
                             <li>
@@ -79,7 +79,7 @@ const Experience = ({ name }) => {
                 <input id="ac-work-3" name="accordion-work" type="radio" />
                 <label for="ac-work-3">Digital Banking Intern · <i>BAWAG P.S.K., Vienna, Austria</i> · <span>July
                         2018 - August 2018</span></label>
-                <div class="ac-medium">
+                <div class="">
                     <div class="panel-body">
                         <ul>
                             <li>
@@ -105,7 +105,7 @@ const Experience = ({ name }) => {
                 <input id="ac-education-1" name="accordion-education" type="radio" checked={true} />
                 <label for="ac-education-1">Interactive Digital Media MSc. · <i>Trinity College Dublin</i> ·
                     <span>September 2024 - September 2025 (expected)</span></label>
-                <div class="ac-medium">
+                <div class="">
                     <div class="experience-panel">
                         <div class="panel-body">
                             <ul>
@@ -123,7 +123,7 @@ const Experience = ({ name }) => {
                 <input id="ac-education-2" name="accordion-education" type="radio" />
                 <label for="ac-education-2">Software and Information Engineering BSc. · <i>TU Wien</i> ·
                     <span>September 2017 - October 2022</span></label>
-                <div class="ac-medium">
+                <div class="">
                     <div class="panel-body">
                         <ul>
                             <li>

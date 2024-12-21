@@ -23,13 +23,13 @@ function App() {
     <div className="App">
       <NavigationMenu></NavigationMenu>
       <Routes>
-          <Route path="/CS7025-portfolio" element={<Home />} />
-          <Route path="/CS7025-portfolio/experience" element={<Experience />} />
-          <Route path="/CS7025-portfolio/projects" element={<Projects />} />
-          <Route path="/CS7025-portfolio/games" element={<Games />} />
-          <Route path="/CS7025-portfolio/music" element={<Music />} />
-          <Route path="/CS7025-portfolio/repositories" element={<Repositories />} />
-          <Route path="/CS7025-portfolio/contact" element={<Contact />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/experience" element={<Experience />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/games" element={<Games />} />
+          <Route path="/music" element={<Music />} />
+          <Route path="/repositories" element={<Repositories />} />
+          <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer></Footer>
     </div>        
