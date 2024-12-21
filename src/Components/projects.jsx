@@ -19,7 +19,7 @@ const Projects = ({ name }) => {
     currentProjects = projectData;
     displayAllProjects(projectData);
 
-    $("#sort-by-name").click(() => sortProjects(SortProperty.NAME), false);
+    // $("#sort-by-name").click(() => sortProjects(SortProperty.NAME), false);
     $("#sort-by-name-desc").click(() => sortProjects(SortProperty.NAME, true));
     $("#sort-by-date").click(() => sortProjects(SortProperty.DATE), false);
     $("#sort-by-date-desc").click(() => sortProjects(SortProperty.DATE, true));
@@ -181,13 +181,13 @@ const Projects = ({ name }) => {
                     class="dropdown-menu"
                     aria-labelledby="dropdownMenuButton1"
                   >
-                    <li class="mt-0">
-                      <a id="sort-by-name" class="dropdown-item" href="#">
+                    <li>
+                      <a id="sort-by-name" class="dropdown-item">
                         Name
                       </a>
                     </li>
                     <li>
-                      <a id="sort-by-name-desc" class="dropdown-item" href="#">
+                      <a id="sort-by-name-desc" class="dropdown-item">
                         Name (desc.)
                       </a>
                     </li>
