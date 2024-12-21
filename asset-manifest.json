@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/CS7025-portfolio/static/css/main.97fe0537.css",
-    "main.js": "/CS7025-portfolio/static/js/main.3ba439b3.js",
+    "main.js": "/CS7025-portfolio/static/js/main.d3b7e4dd.js",
     "static/js/488.7a876c9d.chunk.js": "/CS7025-portfolio/static/js/488.7a876c9d.chunk.js",
     "static/media/homepage_image1.jpg": "/CS7025-portfolio/static/media/homepage_image1.234935437ae8dcee34e1.jpg",
     "static/media/homepage_image0.jpg": "/CS7025-portfolio/static/media/homepage_image0.5b4ba129d4b43239d693.jpg",
@@ -28,11 +28,11 @@
     "static/media/css3-02-svgrepo-com.svg": "/CS7025-portfolio/static/media/css3-02-svgrepo-com.0b435e818710854aebd35efe9280f77c.svg",
     "static/media/angular-svgrepo-com.svg": "/CS7025-portfolio/static/media/angular-svgrepo-com.3189e15b65a3006cde6f76f917b3ce4b.svg",
     "main.97fe0537.css.map": "/CS7025-portfolio/static/css/main.97fe0537.css.map",
-    "main.3ba439b3.js.map": "/CS7025-portfolio/static/js/main.3ba439b3.js.map",
+    "main.d3b7e4dd.js.map": "/CS7025-portfolio/static/js/main.d3b7e4dd.js.map",
     "488.7a876c9d.chunk.js.map": "/CS7025-portfolio/static/js/488.7a876c9d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.97fe0537.css",
-    "static/js/main.3ba439b3.js"
+    "static/js/main.d3b7e4dd.js"
   ]
 }
