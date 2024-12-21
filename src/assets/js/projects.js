@@ -13,7 +13,7 @@ $(document).ready(function() {
             console.log(projectData);
             
             let uniqueTags = generateUniqueTags();
-            console.log(uniqueTags);
+            console.log("tags:", uniqueTags);
 
             createButtons(uniqueTags);
 
@@ -58,6 +58,7 @@ $(document).ready(function() {
 
     // create buttons in our html based on a list of names
     function createButtons(list) {
+        console.log("creating buttons");
         list.forEach(item => {
             console.log(item);
             let newButton = $(`<button id="filter-button-${item}" class="button btn btn-primary col-4 m-1">${item}</button>`);

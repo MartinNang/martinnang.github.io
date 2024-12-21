@@ -2,12 +2,15 @@ import {
     createCard
 } from './cards.js';
 
+const ghToken = process.env.GH_TOKEN;
+
+// load all personal public GitHub repositories
 $(document).ready(function() {
     $.ajax({ 
         type : "GET", 
         url : "https://api.github.com/users/MartinNang/repos", 
         beforeSend: function(xhr){
-          xhr.setRequestHeader('Authorization', 'token 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')
+          xhr.setRequestHeader('Authorization', `token ${ghToken}`)
         },
         success : function(repos) { 
           //set your variable to the result 

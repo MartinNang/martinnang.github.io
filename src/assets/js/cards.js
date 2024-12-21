@@ -5,7 +5,7 @@ const audioFolder = '../audio';
 
 const createCard = function (image, name, loop, audio, date, description, link, linkText, tags) {
     console.log("creating card");
-    console.log("image", image, "name", name, "loop", loop, "audio", audio, "date", date, "description", description, "link", link, "linktext", linkText, "tags", tags);
+    // console.log("image", image, "name", name, "loop", loop, "audio", audio, "date", date, "description", description, "link", link, "linktext", linkText, "tags", tags);
     
     let newCard = $(`
         <div class="card m-2 p-2 bg-dark text-white"></div>
@@ -70,7 +70,7 @@ export function createCardImg(image, name) {
 export function createAudio(loop, audio) {
     return $(`
         <audio controls ${loop ? "loop" : ""} class="project-cover col">
-            <source src="${audioFolder}/${audio}" type="audio/mp3">
+            <source src="${process.env.PUBLIC_URL}/audio/${audio}" type="audio/mp3">
             Your browser does not support the audio element.
         </audio> 
     `);

@@ -19,7 +19,7 @@ const Contact = ({ name }) => {
             () => {
             document.getElementById("contact-form").reset();
             console.log('Email was successfully sent!');
-            document.body.appendChild()
+            document.body.appendChild(<p>Email was sent successfully!</p>)
             },
             (error) => {
             console.log('Email was not sent...', error.text);

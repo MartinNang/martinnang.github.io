@@ -1,43 +1,66 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import $ from 'jquery';
-import createCard from '../assets/js/cards.js';
+import Card from './card';
 
-const Repositories = ({ name }) => {
+
+// the token should be stored on the server side for security reasons.
+// this workaround is in place until a solution through GitHub Actions and environment secrets is implemented
+const ghTokenPt1 = "github_pat_11AMYOBZA0M5EM6j23ZZDE_";
+const ghTokenPt2 = "ahEv629uhl0a2TE1aackkvYynAKECV1d8LuPgTdKnwuEQKWMXPRyQXDz7bK";
+
+const Repositories = () => {
+  const [loading, setLoading] = useState(true);
+
+  const [repos, setRepos] = useState(null);
+
+  useEffect(() => {
+    $.ajax({ 
+      type : "GET", 
+      url : "https://api.github.com/users/MartinNang/repos", 
+      beforeSend: function(xhr){
+        xhr.setRequestHeader('Authorization', `token ${ghTokenPt1}${ghTokenPt2}`)
+      },
+      success : function(data) { 
+        console.log("success", data);
+        setRepos(data);
+        setLoading(false);
+      }, 
+      error : function(data) { 
+        //handle the error 
+        console.log("failed to fetch git repos");
+      } 
+    });
+  }, []);
+
+  console.log("repos", repos);
+
     return (
         // Github page
     <article class="content-wrapper">
         <h1>Repositories</h1>
 
         <section id="github-repos" class="container">
-
+          <div>
+            <h2>{loading ? "loading" : ""}</h2>
+            { repos ? repos.map((repo, i) => (
+              <Card 
+                id = {i}
+                image = {null}
+                name = {repo.name}
+                loop = {false}
+                audio = {null}
+                date = {new Date(repo.created_at)}
+                description = {repo.description}
+                link = {repo.clone_url}
+                linkText = {"Go to Repo"}
+                tags = {null}
+                />
+            )) : ""
+            }
+          </div>
         </section>    
     </article>
     );
 };
-
-$(document).ready(function() {
-    $.ajax({ 
-        type : "GET", 
-        url : "https://api.github.com/users/MartinNang/repos", 
-        beforeSend: function(xhr){
-          xhr.setRequestHeader('Authorization', 'token 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')
-        },
-        success : function(repos) { 
-          //set your variable to the result 
-
-          let container = $("#github-repos");
-          
-          for (let repo of repos) {
-            console.log("repo", repo);
-            let newCard = createCard(null, repo.name, false, null, new Date(repo.created_at), [repo.description], repo.clone_url, "Go to project", null);
-            container.append(newCard);
-          }
-        }, 
-        error : function(repos) { 
-          //handle the error 
-          console.log("error");
-        } 
-      });
-})
 
 export default Repositories;

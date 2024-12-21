@@ -14,22 +14,22 @@ const Header = ({ name }) => {
       <header>
         <Navbar sticky='top' collapseOnSelect expand="lg" className="navigation">
           <Container>
-            <Navbar.Brand href="/#CS7025-portfolio" id='logo'>Martin Nang'ole</Navbar.Brand>
+            <Navbar.Brand href="/CS7025-portfolio/#" id='logo'>Martin Nang'ole</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="ms-auto" activeKey={location.pathname}>
-                <Nav.Link href="/#CS7025-portfolio">home</Nav.Link>
-                <Nav.Link href="/#CS7025-portfolio/experience">experience</Nav.Link>
+                <Nav.Link href="/CS7025-portfolio/#">home</Nav.Link>
+                <Nav.Link href="/CS7025-portfolio/#/experience">experience</Nav.Link>
                 <NavDropdown title="projects" id="collapsible-nav-dropdown">
-                  <NavDropdown.Item href="/#CS7025-portfolio/games">games</NavDropdown.Item>
-                  <NavDropdown.Item href="/#CS7025-portfolio/music">music</NavDropdown.Item>
-                  <NavDropdown.Item href="/#CS7025-portfolio/repositories">repositories</NavDropdown.Item>
+                  <NavDropdown.Item href="/CS7025-portfolio/#/projects/games">games</NavDropdown.Item>
+                  <NavDropdown.Item href="/CS7025-portfolio/#/projects/music">music</NavDropdown.Item>
+                  <NavDropdown.Item href="/CS7025-portfolio/#/projects/repositories">repositories</NavDropdown.Item>
                   <NavDropdown.Divider />
-                  <NavDropdown.Item href="/#CS7025-portfolio/projects">all</NavDropdown.Item>
+                  <NavDropdown.Item href="/CS7025-portfolio/#/projects">all</NavDropdown.Item>
                 </NavDropdown>
               </Nav>
               <Nav activeKey={location.pathname}>
-                <Nav.Link href="/#CS7025-portfolio/contact">contact</Nav.Link>
+                <Nav.Link href="/CS7025-portfolio/#/contact">contact</Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Container>
