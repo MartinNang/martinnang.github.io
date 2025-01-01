@@ -9,7 +9,6 @@ import Repositories from "./components/repositories";
 import Contact from "./components/contact";
 import NavigationMenu from "./components/header";
 import Footer from "./components/footer";
-import autoScrollToTop from "./components/autoScrollToTop";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import "./styles.css";

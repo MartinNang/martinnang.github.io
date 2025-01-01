@@ -2,7 +2,7 @@
  * A header, containing a Bootstrap navbar, displayed on all pages
  */
 
-import React from "react";
+import React, { useEffect } from "react";
 import { useLocation } from "react-router";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
@@ -11,6 +11,11 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 
 const Header = () => {
   const location = useLocation();
+
+  useEffect(() => {
+    console.log("scrolling to top");
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+  }, [location.pathname]);
 
   return (
     <header>
@@ -22,7 +27,11 @@ const Header = () => {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ms-auto" activeKey={location.pathname}>
-              <Nav.Link href="/CS7025-portfolio/#">home</Nav.Link>
+              <Nav.Link
+                href="/CS7025-portfolio/#"
+                onClick={window.scrollTo(0, 0)}>
+                home
+              </Nav.Link>
               <Nav.Link href="/CS7025-portfolio/#/experience">
                 experience
               </Nav.Link>
@@ -41,8 +50,6 @@ const Header = () => {
                   all
                 </NavDropdown.Item>
               </NavDropdown>
-            </Nav>
-            <Nav activeKey={location.pathname}>
               <Nav.Link href="/CS7025-portfolio/#/contact">contact</Nav.Link>
             </Nav>
           </Navbar.Collapse>
