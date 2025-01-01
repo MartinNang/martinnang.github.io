@@ -1,9 +1,14 @@
+/**
+ * Projects page. Fetches project data from json file and loads it dynamically, allowing for filtering and sorting.
+ * Currently only sorting alphabetically backwards works.
+ */
+
 import React, { useEffect } from "react";
 import $ from "jquery";
 import createCard from "../assets/js/cards.js";
-import data from "../assets/data/projects.json";
+import data from "../assets/data/projects.json"; //project data
 
-const Projects = ({ name }) => {
+const Projects = () => {
   useEffect(() => {
     let projectData, uniqueTags, currentProjects;
 
@@ -11,7 +16,7 @@ const Projects = ({ name }) => {
     projectData = data.projects;
     console.log(projectData);
 
-    uniqueTags = generateUniqueTags();
+    uniqueTags = generateUniqueTags(); // list of all tags in all projects with repetitions removed
     console.log(uniqueTags);
 
     createButtons(uniqueTags);
@@ -43,20 +48,19 @@ const Projects = ({ name }) => {
     // create buttons in our html based on a list of names
     function createButtons(list) {
       $("#filters").empty();
-        list.forEach((item) => {
+      list.forEach((item) => {
+        console.log(item);
+        let newButton = $(
+          `<button id="filter-button-${item}" class="button btn btn-primary col-4 m-1">${item}</button>`
+        );
+        // Add click event listener
+        newButton.on("click", function () {
           console.log(item);
-          let newButton = $(
-            `<button id="filter-button-${item}" class="button btn btn-primary col-4 m-1">${item}</button>`
-          );
-          // Add click event listener
-          newButton.on("click", function () {
-            console.log(item);
-            filterProjects(item);
-          });
-          console.log(newButton);
-          $("#filters").append(newButton);
+          filterProjects(item);
         });
-      
+        console.log(newButton);
+        $("#filters").append(newButton);
+      });
     }
 
     // when a button is clicked filter by that 'tag'
@@ -81,7 +85,7 @@ const Projects = ({ name }) => {
       let sortedProjects;
       switch (prop) {
         case SortProperty.DATE:
-          // TODO
+          // TODO implement sorting by date
           break;
         case SortProperty.NAME:
           if (sortBackwards) {
@@ -97,6 +101,7 @@ const Projects = ({ name }) => {
               )
             );
             console.log("sorting ascending");
+            // TODO: fix sorting alphabetically
             sortedProjects = currentProjects.sort((a, b) =>
               a["Name"].localeCompare(b["Name"])
             );
@@ -127,42 +132,45 @@ const Projects = ({ name }) => {
         $("#projects").append(newCard);
       });
     }
-
   });
 
   return (
     <div>
       {/* Projects page content */}
-      <div class="container">
-        <article id="projects-content" class="row">
+      <div class="container" style={{ maxWidth: "100%", padding: "0" }}>
+        <article
+          id="projects-content"
+          class="row project-container p-5 pt-0 pb-0 mb-lg-5">
           {/* Games panel */}
           <a
-            class="project-panel panel-1 col-12 col-lg-5 mt-3 mt-lg-0 m-lg-3"
-            href="#/projects/games"
-          >
+            class="project-panel panel-1 col-12 col-lg-5"
+            style={{ marginRight: "30px" }}
+            href="#/projects/games">
             <div class="panel-header">
               <p>Games</p>
             </div>
           </a>
           {/* Music panel */}
           <a
-            class="project-panel panel-2 col-12 col-lg-5 mt-3 mt-lg-0 m-lg-3"
-            href="#/projects/music"
-          >
+            class="project-panel panel-2 col-12 col-lg-5"
+            style={{ marginRight: "30px" }}
+            href="#/projects/music">
             <div class="panel-header">
               <p>Music</p>
             </div>
           </a>
-          {/* Github panel
-                <a class="project-panel col-12 col-lg-5 mt-3 mt-lg-0 m-lg-3" href="github.html">
-                  <div class="panel-header">
-                      <p>Github</p>
-                  </div>
-                </a> */}
+          <a
+            class="project-panel panel-3 col-12 col-lg-5"
+            href="#/projects/repositories">
+            <div class="panel-header">
+              <p>Repositories</p>
+            </div>
+          </a>
         </article>
-
-        <article class="content-wrapper row">
-          <h1 class="panel-3">Projects</h1>
+      </div>
+      <div class="container">
+        <article class="content-wrapper row" style={{ marginTop: "-150px" }}>
+          <h1>Projects</h1>
           <div class="container">
             <div class="row">
               <div id="filters" class="col ms-auto"></div>
@@ -173,14 +181,12 @@ const Projects = ({ name }) => {
                     type="button"
                     id="sort-dropdown"
                     data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                    aria-expanded="false">
                     Sort by
                   </button>
                   <ul
                     class="dropdown-menu"
-                    aria-labelledby="dropdownMenuButton1"
-                  >
+                    aria-labelledby="dropdownMenuButton1">
                     <li>
                       <a id="sort-by-name" class="dropdown-item">
                         Name
@@ -206,10 +212,5 @@ const Projects = ({ name }) => {
     </div>
   );
 };
-// document.addEventListener('DOMContentLoaded', function () {
-
-//project data is read from json and unique tags contains a list of all tags in all projects with repetitions removed
-
-// });
 
 export default Projects;
