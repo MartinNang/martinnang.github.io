@@ -1,14 +1,10 @@
 /**
  * Games page.
  */
-import React, { useEffect } from "react";
+import React from "react";
 import Automaton from "./automaton";
 
 const Games = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   return (
     <div>
       <Automaton></Automaton>

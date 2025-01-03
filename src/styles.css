@@ -184,7 +184,7 @@ footer {
   gap: 10px;
   grid-template-columns: 40% 60%; */
   max-width: 1080px;
-  min-width: 880px;
+  /* min-width: 880px; */
 
   margin: 0 auto;
   margin-top: 100px;
@@ -235,10 +235,10 @@ footer {
 }
 
 .skills-wrapper {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 33% 33% 33%;
 
-  row-gap: 30px;
+  row-gap: 30px; */
 }
 
 .skill img {
@@ -254,11 +254,11 @@ footer {
 
 .experience-wrapper {
   animation: experience_fadein 2s;
-  display: grid;
+  /* display: grid; */
   margin-top: 80px;
   padding-bottom: 120px;
 
-  grid-template-columns: 50% 50%;
+  /* grid-template-columns: 50% 50%; */
 }
 
 .content-wrapper {
@@ -290,6 +290,7 @@ footer {
 /* Homepage: Experience panel */
 p.subsection-year {
   font-size: 0.8em;
+  margin-top: 2em;
 }
 
 p.subsection-name {
@@ -303,7 +304,7 @@ p.subsection-organization {
 .experience-subsection {
   display: grid;
   gap: 20px;
-  grid-template-columns: 20% 80%;
+  /* grid-template-columns: 20% 80%; */
 
   align-items: center;
 }
@@ -313,7 +314,7 @@ p.subsection-organization {
 }
 
 .education-subsection {
-  grid-template-columns: 40% 60%;
+  /* grid-template-columns: 40% 60%; */
 }
 
 .education-subsection img {
@@ -415,6 +416,8 @@ p.subsection-organization {
 }
 
 .experience-subsection {
+  min-height: 150px;
+  /* align-items: center; */
   transition: 300ms;
   padding: 5px 20px 20px 30px;
 }
@@ -804,6 +807,10 @@ canvas {
 @media screen and (max-width: 991px) {
   .dropdown:hover .dropdown-menu {
     display: block;
+  }
+
+  .subsection-year {
+    margin-top: 2em;
   }
 }
 
