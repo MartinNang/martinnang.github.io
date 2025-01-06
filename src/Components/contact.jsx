@@ -37,9 +37,9 @@ const Contact = () => {
   };
   return (
     // Contact page
-    <article class="content-wrapper">
+    <article class="content-wrapper p-4">
       <h1>Contact</h1>
-      <div class="contact-panel">
+      <div class="contact-panel m-3">
         <form id="contact-form" ref={form} onSubmit={sendEmail}>
           <label>Name</label>
           <input

@@ -3,136 +3,145 @@
  * Currently only sorting alphabetically backwards works.
  */
 
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import $ from "jquery";
 import createCard from "../assets/js/cards.js";
 import data from "../assets/data/projects.json"; //project data
+import CustomCard from "./card";
 
 const Projects = () => {
+  const [loading, setLoading] = useState(true);
+  const [projects, setProjects] = useState(data.projects);
+  console.log("projects", projects);
+  let project = projects[0];
+  console.log("1:", projects[0]);
+
   useEffect(() => {
-    let projectData, uniqueTags, currentProjects;
+    // setProjects(data);
+    // setLoading(false);
+  }, []);
+  //   let projectData, uniqueTags, currentProjects;
 
-    console.log("loading projects");
-    projectData = data.projects;
-    console.log(projectData);
+  //   console.log("loading projects");
+  //   console.log(projectData);
 
-    uniqueTags = generateUniqueTags(); // list of all tags in all projects with repetitions removed
-    console.log(uniqueTags);
+  //   uniqueTags = generateUniqueTags(); // list of all tags in all projects with repetitions removed
+  //   console.log(uniqueTags);
 
-    createButtons(uniqueTags);
+  //   createButtons(uniqueTags);
 
-    currentProjects = projectData;
-    displayAllProjects(projectData);
+  //   currentProjects = projectData;
+  //   // displayAllProjects(projectData);
 
-    // $("#sort-by-name").click(() => sortProjects(SortProperty.NAME), false);
-    $("#sort-by-name-desc").click(() => sortProjects(SortProperty.NAME, true));
-    $("#sort-by-date").click(() => sortProjects(SortProperty.DATE), false);
-    $("#sort-by-date-desc").click(() => sortProjects(SortProperty.DATE, true));
+  //   // $("#sort-by-name").click(() => sortProjects(SortProperty.NAME), false);
+  //   $("#sort-by-name-desc").click(() => sortProjects(SortProperty.NAME, true));
+  //   $("#sort-by-date").click(() => sortProjects(SortProperty.DATE), false);
+  //   $("#sort-by-date-desc").click(() => sortProjects(SortProperty.DATE, true));
 
-    // find all the unique tags in our data
-    function generateUniqueTags() {
-      let uniqueTags = new Set(); // use Set for collecting unique tags
-      // Iterate over project data to collect tags
-      projectData.forEach((element) => {
-        if (element["Tags"]) {
-          // Check if "Tags" exists
-          element["Tags"].forEach((tag) => {
-            uniqueTags.add(tag);
-          });
-        }
-      });
+  //   // find all the unique tags in our data
+  //   function generateUniqueTags() {
+  //     let uniqueTags = new Set(); // use Set for collecting unique tags
+  //     // Iterate over project data to collect tags
+  //     projectData.forEach((element) => {
+  //       if (element["Tags"]) {
+  //         // Check if "Tags" exists
+  //         element["Tags"].forEach((tag) => {
+  //           uniqueTags.add(tag);
+  //         });
+  //       }
+  //     });
 
-      return uniqueTags;
-    }
+  //     return uniqueTags;
+  //   }
 
-    // create buttons in our html based on a list of names
-    function createButtons(list) {
-      $("#filters").empty();
-      list.forEach((item) => {
-        console.log(item);
-        let newButton = $(
-          `<button id="filter-button-${item}" class="button btn btn-primary col-4 m-1">${item}</button>`
-        );
-        // Add click event listener
-        newButton.on("click", function () {
-          console.log(item);
-          filterProjects(item);
-        });
-        console.log(newButton);
-        $("#filters").append(newButton);
-      });
-    }
+  //   // create buttons in our html based on a list of names
+  //   function createButtons(list) {
+  //     $("#filters").empty();
+  //     list.forEach((item) => {
+  //       console.log(item);
+  //       let newButton = $(
+  //         `<button id="filter-button-${item}" class="button btn btn-primary col-4 m-1">${item}</button>`
+  //       );
+  //       // Add click event listener
+  //       newButton.on("click", function () {
+  //         console.log(item);
+  //         filterProjects(item);
+  //       });
+  //       console.log(newButton);
+  //       $("#filters").append(newButton);
+  //     });
+  //   }
 
-    // when a button is clicked filter by that 'tag'
-    function filterProjects(tag) {
-      // Filter projects by selected tag
-      let filteredProjects = projectData.filter(
-        (project) => project["Tags"] && project["Tags"].includes(tag)
-      );
+  //   // when a button is clicked filter by that 'tag'
+  //   function filterProjects(tag) {
+  //     // Filter projects by selected tag
+  //     let filteredProjects = projectData.filter(
+  //       (project) => project["Tags"] && project["Tags"].includes(tag)
+  //     );
 
-      console.log("success ran filterfunction");
-      currentProjects = filteredProjects;
-      displayAllProjects(currentProjects);
-    }
+  //     console.log("success ran filterfunction");
+  //     currentProjects = filteredProjects;
+  //     displayAllProjects(currentProjects);
+  //   }
 
-    const SortProperty = {
-      DATE: "Date",
-      NAME: "Name",
-    };
+  //   const SortProperty = {
+  //     DATE: "Date",
+  //     NAME: "Name",
+  //   };
 
-    function sortProjects(prop, sortBackwards) {
-      console.log("sorting projects");
-      let sortedProjects;
-      switch (prop) {
-        case SortProperty.DATE:
-          // TODO implement sorting by date
-          break;
-        case SortProperty.NAME:
-          if (sortBackwards) {
-            console.log("sorting descending");
-            sortedProjects = currentProjects.sort((a, b) =>
-              b["Name"].localeCompare(a["Name"])
-            );
-          } else {
-            console.log(
-              "name: ",
-              currentProjects[0]["Name"].localeCompare(
-                currentProjects[1]["Name"]
-              )
-            );
-            console.log("sorting ascending");
-            // TODO: fix sorting alphabetically
-            sortedProjects = currentProjects.sort((a, b) =>
-              a["Name"].localeCompare(b["Name"])
-            );
-          }
-          break;
-      }
-      if (sortedProjects) {
-        console.log("sorted projects", sortedProjects);
-        displayAllProjects(sortedProjects);
-      }
-    }
+  //   function sortProjects(prop, sortBackwards) {
+  //     console.log("sorting projects");
+  //     let sortedProjects;
+  //     switch (prop) {
+  //       case SortProperty.DATE:
+  //         // TODO implement sorting by date
+  //         break;
+  //       case SortProperty.NAME:
+  //         if (sortBackwards) {
+  //           console.log("sorting descending");
+  //           sortedProjects = currentProjects.sort((a, b) =>
+  //             b["Name"].localeCompare(a["Name"])
+  //           );
+  //         } else {
+  //           console.log(
+  //             "name: ",
+  //             currentProjects[0]["Name"].localeCompare(
+  //               currentProjects[1]["Name"]
+  //             )
+  //           );
+  //           console.log("sorting ascending");
+  //           // TODO: fix sorting alphabetically
+  //           sortedProjects = currentProjects.sort((a, b) =>
+  //             a["Name"].localeCompare(b["Name"])
+  //           );
+  //         }
+  //         break;
+  //     }
+  //     if (sortedProjects) {
+  //       console.log("sorted projects", sortedProjects);
+  //       displayAllProjects(sortedProjects);
+  //     }
+  //   }
 
-    //display the projects in the variable 'projects'
-    function displayAllProjects(projects) {
-      $("#projects").empty(); // Clear existing projects before displaying
-      projects.forEach((item) => {
-        let newCard = createCard(
-          item["Image"],
-          item["Name"],
-          item["Loop"],
-          item["Audio"],
-          new Date(item["Date"]),
-          item["Description"],
-          item["Link"],
-          item["LinkText"],
-          item["Tags"]
-        );
-        $("#projects").append(newCard);
-      });
-    }
-  });
+  //display the projects in the variable 'projects'
+  //   function displayAllProjects(projects) {
+  //     $("#projects").empty(); // Clear existing projects before displaying
+  //     projects.forEach((item) => {
+  //       let newCard = createCard(
+  //         item["Image"],
+  //         item["Name"],
+  //         item["Loop"],
+  //         item["Audio"],
+  //         new Date(item["Date"]),
+  //         item["Description"],
+  //         item["Link"],
+  //         item["LinkText"],
+  //         item["Tags"]
+  //       );
+  //       $("#projects").append(newCard);
+  //     });
+  //   }
+  // });
 
   return (
     <div>
@@ -203,7 +212,23 @@ const Projects = () => {
                 </div>
               </div>
             </div>
-            <div id="projects" class="row mt-2"></div>
+            <div id="projects" class="row mt-2">
+              <h2>{loading ? "loading" : ""}</h2>
+              {projects.map((project, i) => (
+                <CustomCard
+                  id={i}
+                  image={project.Image}
+                  name={project.Name}
+                  loop={project.Loop}
+                  audio={project.Audio}
+                  date={new Date(project.Date)}
+                  description={project.Description}
+                  link={project.Link}
+                  linkText={project.LinkText}
+                  tags={project.Tags}
+                />
+              ))}
+            </div>
           </div>
         </article>
       </div>

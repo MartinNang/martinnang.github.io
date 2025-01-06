@@ -4,7 +4,7 @@
 
 import React, { useEffect, useState } from "react";
 import $ from "jquery";
-import Card from "./card";
+import CustomCard from "./card";
 
 // this token should be stored on the server side for security reasons.
 // TOOD: replace this workaround ASAP through GitHub Actions and environment secrets.
@@ -50,7 +50,7 @@ const Repositories = () => {
           <h2>{loading ? "loading" : ""}</h2>
           {repos
             ? repos.map((repo, i) => (
-                <Card
+                <CustomCard
                   id={i}
                   image={null}
                   name={repo.name}

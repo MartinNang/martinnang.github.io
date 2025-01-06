@@ -6,7 +6,7 @@ import React from "react";
 const Experience = () => {
   return (
     <div>
-      <div class="content-wrapper">
+      <div class="content-wrapper p-4">
         <article class="ac-container">
           <h1 id="work-experience">Work Experience</h1>
           <div>

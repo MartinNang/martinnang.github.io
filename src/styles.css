@@ -159,7 +159,7 @@ footer {
 }
 
 .contact-panel {
-  padding-left: 1em;
+  /* padding-left: 1em; */
 }
 
 /* Start - Homepage */
@@ -627,8 +627,8 @@ label {
 }
 
 .contact-panel {
-  margin: 0 4em;
-  padding: 0 50px;
+  /* margin: 0 4em; */
+  /* padding: 0 50px; */
 
   border-radius: 10px;
 }
