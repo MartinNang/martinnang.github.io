@@ -21,36 +21,30 @@ const Header = () => {
     <header>
       <Navbar sticky="top" collapseOnSelect expand="lg" className="navigation">
         <Container>
-          <Navbar.Brand href="/CS7025-portfolio/#" id="logo">
+          <Navbar.Brand href="/#" id="logo">
             Martin Nang'ole
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ms-auto" activeKey={location.pathname}>
-              <Nav.Link
-                href="/CS7025-portfolio/#"
-                onClick={window.scrollTo(0, 0)}>
+              <Nav.Link href="/#" onClick={window.scrollTo(0, 0)}>
                 home
               </Nav.Link>
-              <Nav.Link href="/CS7025-portfolio/#/experience">
-                experience
-              </Nav.Link>
+              <Nav.Link href="/#/experience">experience</Nav.Link>
               <NavDropdown title="projects" id="collapsible-nav-dropdown">
-                <NavDropdown.Item href="/CS7025-portfolio/#/projects/games">
+                <NavDropdown.Item href="/#/projects/games">
                   games
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/CS7025-portfolio/#/projects/music">
+                <NavDropdown.Item href="/#/projects/music">
                   music
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/CS7025-portfolio/#/projects/repositories">
+                <NavDropdown.Item href="/#/projects/repositories">
                   repositories
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="/CS7025-portfolio/#/projects">
-                  all
-                </NavDropdown.Item>
+                <NavDropdown.Item href="/#/projects">all</NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link href="/CS7025-portfolio/#/contact">contact</Nav.Link>
+              <Nav.Link href="/#/contact">contact</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
