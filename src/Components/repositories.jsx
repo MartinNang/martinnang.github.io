@@ -6,12 +6,6 @@ import React, { useEffect, useState } from "react";
 import $ from "jquery";
 import CustomCard from "./card";
 
-// this token should be stored on the server side for security reasons.
-// TOOD: replace this workaround ASAP through GitHub Actions and environment secrets.
-const ghTokenPt1 = "github_pat_11AMYOBZA0M5EM6j23ZZDE_";
-const ghTokenPt2 =
-  "ahEv629uhl0a2TE1aackkvYynAKECV1d8LuPgTdKnwuEQKWMXPRyQXDz7bK";
-
 const Repositories = () => {
   const [loading, setLoading] = useState(true);
   const [repos, setRepos] = useState(null);
@@ -20,12 +14,6 @@ const Repositories = () => {
     $.ajax({
       type: "GET",
       url: "https://api.github.com/users/MartinNang/repos",
-      beforeSend: function (xhr) {
-        xhr.setRequestHeader(
-          "Authorization",
-          `token ${ghTokenPt1}${ghTokenPt2}`
-        );
-      },
       success: function (data) {
         console.log("success", data);
         setRepos(data);
