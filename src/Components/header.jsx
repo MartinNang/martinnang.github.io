@@ -26,25 +26,33 @@ const Header = () => {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="ms-auto" activeKey={location.pathname}>
-              <Nav.Link href="/#" onClick={window.scrollTo(0, 0)}>
-                home
-              </Nav.Link>
-              <Nav.Link href="/#/experience">experience</Nav.Link>
-              <NavDropdown title="projects" id="collapsible-nav-dropdown">
-                <NavDropdown.Item href="/#/projects/games">
-                  games
-                </NavDropdown.Item>
-                <NavDropdown.Item href="/#/projects/music">
-                  music
-                </NavDropdown.Item>
-                <NavDropdown.Item href="/#/projects/repositories">
-                  repositories
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="/#/projects">all</NavDropdown.Item>
-              </NavDropdown>
-              <Nav.Link href="/#/contact">contact</Nav.Link>
+            <Nav className="ms-auto" activeKey="1">
+              <Nav.Item eventKey="1">
+                <Nav.Link href="/#" onClick={window.scrollTo(0, 0)}>
+                  home
+                </Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link href="/#/experience">experience</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <NavDropdown title="projects" id="collapsible-nav-dropdown">
+                  <NavDropdown.Item href="/#/projects/games">
+                    games
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="/#/projects/music">
+                    music
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="/#/projects/repositories">
+                    repositories
+                  </NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item href="/#/projects">all</NavDropdown.Item>
+                </NavDropdown>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link href="/#/contact">contact</Nav.Link>
+              </Nav.Item>
             </Nav>
           </Navbar.Collapse>
         </Container>

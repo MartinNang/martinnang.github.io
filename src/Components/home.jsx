@@ -22,7 +22,8 @@ import javaIcon from "../assets/img/java-svgrepo-com.svg";
 import xmlIcon from "../assets/img/xml-document-svgrepo-com.svg";
 import springIcon from "../assets/img/spring-svgrepo-com.svg";
 import mavenIcon from "../assets/img/apachemaven-svgrepo-com.svg";
-// import tomcatIcon from "../assets/img/";
+import reactIcon from "../assets/img/react-16-svgrepo-com.svg";
+import tomcatIcon from "../assets/img/tomcat-svgrepo-com.svg";
 import seleniumIcon from "../assets/img/selenium-svgrepo-com.svg";
 
 // Company logos
@@ -79,6 +80,7 @@ const Home = () => {
               <Skill name={"Bootstrap"} icon={bootstrapIcon}></Skill>
               <Skill name={"JavaScript"} icon={javascriptIcon}></Skill>
               <Skill name={"CSS3"} icon={cssIcon}></Skill>
+              <Skill name={"React"} icon={reactIcon}></Skill>
               <Skill name={"Angular"} icon={angularIcon}></Skill>
               <Skill name={"TypeScript"} icon={typescriptIcon}></Skill>
             </Row>
@@ -94,7 +96,7 @@ const Home = () => {
               <Skill name={"XML"} icon={xmlIcon}></Skill>
               <Skill name={"Spring"} icon={springIcon}></Skill>
               <Skill name={"Maven"} icon={mavenIcon}></Skill>
-              {/* <Skill name={"Tomcat"} icon={tomcatIcon}></Skill> */}
+              <Skill name={"Tomcat"} icon={tomcatIcon}></Skill>
               <Skill name={"Selenium"} icon={seleniumIcon}></Skill>
             </Row>
           </Container>
