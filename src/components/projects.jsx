@@ -185,14 +185,14 @@ const Projects = () => {
               <div id="filters" class="col ms-auto"></div>
               <div class="col-3 col-md-1">
                 <div class="dropdown">
-                  <button
+                  {/*<button
                     class="btn btn-secondary dropdown-toggle"
                     type="button"
                     id="sort-dropdown"
                     data-bs-toggle="dropdown"
                     aria-expanded="false">
                     Sort by
-                  </button>
+                  </button>*/}
                   <ul
                     class="dropdown-menu"
                     aria-labelledby="dropdownMenuButton1">
