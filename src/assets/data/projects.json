@@ -22,6 +22,38 @@
       ]
     },
     {
+      "Name": "Chichén Itzá",
+      "Status": "Complete",
+      "Date": "2025-04-15T00:00:00Z",
+      "Image": "chichen-itza-homepage.png",
+      "Tags": ["Branding & Design", "Frontend"],
+      "Link": "https://martinnang.github.io/chichen-itza-website/",
+      "LinkText": "Visit website",
+      "Description": [
+        "Designed low-fidelity wireframes and implemented A child-friendly, educational website for the archaeological site of Chichén Itzá using HTML5, CSS3, Bootstrap and JavaScript."
+      ]
+    },
+    {
+      "Name": "En Route",
+      "Status": "Complete",
+      "Date": "2025-04-15T00:00:00Z",
+      "Image": "en-route-events-search.png",
+      "Tags": ["Branding & Design", "Frontend", "Backend"],
+      "Description": [
+        "Implemented REST-API and React components for a travel itinerary web-application in Node.JS, Express.js, React and React-Bootstrap and using the OpenStreetMap database through Overpass API."
+      ]
+    },
+    {
+      "Name": "Maeve",
+      "Status": "Complete",
+      "Date": "2025-01-21T00:00:00Z",
+      "Image": "maevesafety_logo.jpeg",
+      "Tags": ["Branding & Design", "Research"],
+      "Description": [
+        "Conducted UX research, including surveys and semi-structured interviews, for a data-driven safety app for women. Participated in mentoring programs and pitch sessions as part of phase 1 of Launchbox, the Student Accelerator at Trinity College Dublin."
+      ]
+    },
+    {
       "Name": "Ticketing Service Mockup",
       "Status": "Complete",
       "Date": "2020-03-30T00:00:00Z",
@@ -29,6 +61,18 @@
       "Tags": ["App Design", "Media & Prototypes"],
       "Description": [
         "A prototype of a mobile app designed for task management, built using a popular prototyping tool."
+      ]
+    },
+    {
+      "Name": "Preserving Kenyan Oral Literature Through Environmental Storytelling",
+      "Status": "Complete",
+      "Date": "2025-05-15T00:00:00Z",
+      "Tags": ["Research"],
+      "Image": "research_paper_gameplay.png",
+      "Link": "/documents/Preserving_Kenyan_Oral_Traditions_Through_Environmental_Storytelling.pdf",
+      "LinkText": "Read the paper",
+      "Description": [
+        "Environmental storytelling is a form of storytelling commonly used in video games that relies on spatial design for the purpose of conveying a narrative. This paper analyses the potential of environmental storytelling in embedding Kenyan oral traditions in an effort to digitally preserve Indigenous oral literature through the use of Interactive Digital Narratives (IDNs). First, a literature review is conducted to find taxonomies and decide on definitions related to the topics of IDNs, Indigenous people, and environmental storytelling. Then, an interview analysis was conducted to explore the need, practicality and ethics behind the digitisation of oral traditions in IDNs. Finally, a prototype was developed to put insights from the prior sections into practice. We find that while environmental storytelling presents an opportunity in IDNs to preserve Kenyan oral traditions in a way that emphasizes multiple perspectives, challenges remain in the preservation of the storyteller’s performance."
       ]
     },
     {
