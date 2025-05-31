@@ -4,10 +4,9 @@
  */
 
 import React, { useEffect, useState } from "react";
-import $ from "jquery";
-import createCard from "../assets/js/cards.js";
 import data from "../assets/data/projects.json"; //project data
 import CustomCard from "./card";
+import {Row, Col} from "react-bootstrap";
 
 const Projects = () => {
   const [loading, setLoading] = useState(false);
@@ -149,7 +148,7 @@ const Projects = () => {
       <div class="container" style={{ maxWidth: "100%", padding: "0" }}>
         <article
           id="projects-content"
-          class="row project-container p-5 pt-0 pb-0 mb-lg-5">
+          class="row project-container p-5 pt-0 pb-0 mb-lg-5 pt-4">
           {/* Games panel */}
           <a
             class="project-panel panel-1 col-12 col-lg-5"
@@ -214,20 +213,46 @@ const Projects = () => {
             </div>
             <div id="projects" class="row mt-2">
               <h2>{loading ? "loading" : ""}</h2>
-              {projects.map((project, i) => (
-                <CustomCard
-                  id={i}
-                  image={project.Image}
-                  name={project.Name}
-                  loop={project.Loop}
-                  audio={project.Audio}
-                  date={new Date(project.Date)}
-                  description={project.Description}
-                  link={project.Link}
-                  linkText={project.LinkText}
-                  tags={project.Tags}
-                />
-              ))}
+              <Row>
+                <Col md={6} className={"px-3"}>
+                  {projects.slice(0, projects.length/2+1).map((project, i) => (
+                      <Row className={""}>
+                        <CustomCard
+                            id={i}
+                            image={project.Image}
+                            name={project.Name}
+                            loop={project.Loop}
+                            audio={project.Audio}
+                            date={new Date(project.Date)}
+                            description={project.Description}
+                            link={project.Link}
+                            linkText={project.LinkText}
+                            tags={project.Tags}
+                        />
+                      </Row>
+                  ))}
+                </Col>
+                <Col md={6} className={"px-3"}>
+                  {projects.slice(projects.length/2+1).map((project, i) => (
+                      <Row>
+                        <CustomCard
+                            id={i}
+                            image={project.Image}
+                            name={project.Name}
+                            loop={project.Loop}
+                            audio={project.Audio}
+                            date={new Date(project.Date)}
+                            description={project.Description}
+                            link={project.Link}
+                            linkText={project.LinkText}
+                            tags={project.Tags}
+                        />
+                      </Row>
+                  ))}
+                </Col>
+              </Row>
+
+
             </div>
           </div>
         </article>

@@ -39,6 +39,8 @@
       "Date": "2025-04-15T00:00:00Z",
       "Image": "en-route-events-search.png",
       "Tags": ["Branding & Design", "Frontend", "Backend"],
+      "Link": "https://martinnang.github.io/en-route/",
+      "LinkText": "Visit website",
       "Description": [
         "Implemented REST-API and React components for a travel itinerary web-application in Node.JS, Express.js, React and React-Bootstrap and using the OpenStreetMap database through Overpass API."
       ]

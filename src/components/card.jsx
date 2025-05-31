@@ -48,7 +48,7 @@ const CustomCard = ({
         <p class="project-date">
           Date: {date.getDate()}.{date.getMonth() + 1}.{date.getFullYear()}
         </p>
-        <p class="card-text project-description">{description}</p>
+        <p class="card-text project-description">{description ? description[0].length > 250 ? `${description[0]?.substring(0, 250)}...`:description : ""}</p>
         {link && linkText ? (
           <a
             href={link.startsWith("/") ? process.env.PUBLIC_URL + link : link}
@@ -61,7 +61,7 @@ const CustomCard = ({
         )}
       </CardBody>
       <CardFooter className="row">
-        <small class="text-light">Tags: {tags}</small>
+        <small class="text-light">{tags ? "Tags: " + tags : tags}</small>
       </CardFooter>
     </Card>
   );
