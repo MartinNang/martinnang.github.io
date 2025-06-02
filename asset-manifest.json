@@ -1,8 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.25102558.css",
-    "main.js": "/static/js/main.5e92b404.js",
+    "main.css": "/static/css/main.a0ceb796.css",
+    "main.js": "/static/js/main.99076da5.js",
     "static/js/488.7a876c9d.chunk.js": "/static/js/488.7a876c9d.chunk.js",
+    "static/media/research_paper_gameplay.png": "/static/media/research_paper_gameplay.80a57e7d450f4135a6c6.png",
+    "static/media/3dsmax.jpg": "/static/media/3dsmax.29472a45dff6de0de4b9.jpg",
     "static/media/homepage_image1.jpg": "/static/media/homepage_image1.234935437ae8dcee34e1.jpg",
     "static/media/homepage_image0.jpg": "/static/media/homepage_image0.5b4ba129d4b43239d693.jpg",
     "static/media/homepage_image2.png": "/static/media/homepage_image2.58a760a047bad1a58b59.png",
@@ -30,12 +32,12 @@
     "static/media/spring-svgrepo-com.svg": "/static/media/spring-svgrepo-com.acf04d1c0a137695fff363d37d383e64.svg",
     "static/media/css3-02-svgrepo-com.svg": "/static/media/css3-02-svgrepo-com.0b435e818710854aebd35efe9280f77c.svg",
     "static/media/angular-svgrepo-com.svg": "/static/media/angular-svgrepo-com.3189e15b65a3006cde6f76f917b3ce4b.svg",
-    "main.25102558.css.map": "/static/css/main.25102558.css.map",
-    "main.5e92b404.js.map": "/static/js/main.5e92b404.js.map",
+    "main.a0ceb796.css.map": "/static/css/main.a0ceb796.css.map",
+    "main.99076da5.js.map": "/static/js/main.99076da5.js.map",
     "488.7a876c9d.chunk.js.map": "/static/js/488.7a876c9d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.25102558.css",
-    "static/js/main.5e92b404.js"
+    "static/css/main.a0ceb796.css",
+    "static/js/main.99076da5.js"
   ]
 }
