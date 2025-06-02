@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.4f23de69.css",
-    "main.js": "/static/js/main.6fc01019.js",
+    "main.css": "/static/css/main.25102558.css",
+    "main.js": "/static/js/main.5e92b404.js",
     "static/js/488.7a876c9d.chunk.js": "/static/js/488.7a876c9d.chunk.js",
     "static/media/homepage_image1.jpg": "/static/media/homepage_image1.234935437ae8dcee34e1.jpg",
     "static/media/homepage_image0.jpg": "/static/media/homepage_image0.5b4ba129d4b43239d693.jpg",
@@ -30,12 +30,12 @@
     "static/media/spring-svgrepo-com.svg": "/static/media/spring-svgrepo-com.acf04d1c0a137695fff363d37d383e64.svg",
     "static/media/css3-02-svgrepo-com.svg": "/static/media/css3-02-svgrepo-com.0b435e818710854aebd35efe9280f77c.svg",
     "static/media/angular-svgrepo-com.svg": "/static/media/angular-svgrepo-com.3189e15b65a3006cde6f76f917b3ce4b.svg",
-    "main.4f23de69.css.map": "/static/css/main.4f23de69.css.map",
-    "main.6fc01019.js.map": "/static/js/main.6fc01019.js.map",
+    "main.25102558.css.map": "/static/css/main.25102558.css.map",
+    "main.5e92b404.js.map": "/static/js/main.5e92b404.js.map",
     "488.7a876c9d.chunk.js.map": "/static/js/488.7a876c9d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4f23de69.css",
-    "static/js/main.6fc01019.js"
+    "static/css/main.25102558.css",
+    "static/js/main.5e92b404.js"
   ]
 }
