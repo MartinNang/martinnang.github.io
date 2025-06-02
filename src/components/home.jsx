@@ -55,9 +55,8 @@ const Home = () => {
             </Col>
             <Col className="mt-5 mt-lg-0" xs={12} lg={7}>
               <div class="intro-text">
-                <h1>Hi there! 👋🏼</h1>
                 <p>
-                  I'm a software developer who is looking to work on{" "}
+                  I'm a full-stack developer who is looking to work on{" "}
                   <b>creative</b> and <b>innovative</b> projects.
                 </p>
               </div>

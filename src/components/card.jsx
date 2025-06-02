@@ -1,4 +1,4 @@
-import { Card, CardBody, CardFooter, CardImg } from "react-bootstrap";
+import {Card, CardBody, CardFooter, CardImg, Carousel} from "react-bootstrap";
 /**
  * A basic Bootstrap card template for projects.
  * @param {id} id of the dynamically generated element
@@ -11,7 +11,7 @@ import { Card, CardBody, CardFooter, CardImg } from "react-bootstrap";
  */
 const CustomCard = ({
   id,
-  image,
+  images,
   name,
   loop,
   audio,
@@ -23,15 +23,27 @@ const CustomCard = ({
 }) => {
   return (
     <Card key={id} className="m-2 p-2 bg-dark text-white">
-      {image ? (
-        <CardImg
-          variant="top"
-          src={process.env.PUBLIC_URL + "/img/" + image}
-          alt="${name}"
-        />
-      ) : (
-        ""
-      )}
+      {
+        images ? images?.length > 1 ? (
+            <Carousel interval={null} touch>
+              {
+                images.map(image => (
+                    <Carousel.Item>
+                      <CardImg
+                          variant="top"
+                          src={process.env.PUBLIC_URL + "/img/" + image}
+                          alt="${name}"
+                      />
+                    </Carousel.Item>
+                ))
+              }
+            </Carousel>
+          ) : <CardImg
+            variant="top"
+            src={process.env.PUBLIC_URL + "/img/" + images[0]}
+            alt="${name}"
+        /> : ""
+      }
       {audio ? (
         <audio controls loop={loop} class="project-cover col w-100">
           <source

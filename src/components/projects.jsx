@@ -219,7 +219,7 @@ const Projects = () => {
                       <Row className={""}>
                         <CustomCard
                             id={i}
-                            image={project.Image}
+                            images={project.Image}
                             name={project.Name}
                             loop={project.Loop}
                             audio={project.Audio}
@@ -237,7 +237,7 @@ const Projects = () => {
                       <Row>
                         <CustomCard
                             id={i}
-                            image={project.Image}
+                            images={project.Image}
                             name={project.Name}
                             loop={project.Loop}
                             audio={project.Audio}
