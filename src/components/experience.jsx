@@ -167,7 +167,7 @@ const Experience = () => {
   const customFontSizes = {
     cardSubtitle: '1rem',
         cardText: '0.9rem',
-        cardTitle: '1.2rem',
+        cardTitle: '1.5rem',
         title: '1.25rem',
   }
 

@@ -41,9 +41,9 @@ import slideImgResearch from "../assets/img/research_paper_gameplay.png";
 
 const Home = () => {
   return (
-    <div>
+    <div className={"home-container"}>
       {/* Introductory paragraph */}
-      <article class="intro">
+      <article class="intro home-section">
         <Container>
           <Row className="align-items-center">
             <Col xs={12} lg={5}>
@@ -70,7 +70,7 @@ const Home = () => {
       <hr id="intro-seperator" />
 
       {/* Skills */}
-      <article class="content-wrapper">
+      <article class="content-wrapper home-section">
         <section>
           <h2 className="ms-5">Skills</h2>
           <Container>
@@ -107,7 +107,7 @@ const Home = () => {
       </article>
 
       {/* Experience */}
-      <div class="experience-wrapper pt-5 px-1 p-md-4">
+      <div class="experience-wrapper pt-5 px-1 p-md-4 home-section">
         <Container>
           <Row>
             <Col>
@@ -257,7 +257,7 @@ const Home = () => {
         </Container>
       </div>
 
-      <Slideshow interval={5000} images={[slideImg3, slideImgResearch, slideImg0, slideImg1, slideImg2]} />
+      <Slideshow className={"home-section"} interval={5000} images={[slideImg3, slideImgResearch, slideImg0, slideImg1, slideImg2]} />
 
       <div class="bg-rect"></div>
     </div>
