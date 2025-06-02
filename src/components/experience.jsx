@@ -186,7 +186,7 @@ const Experience = () => {
         </Row>
       </Container>
 
-      <Chrono items={items} fontSizes={customFontSizes} theme={customDarkTheme} timelinePointColor={"#ffffff"} mode={"VERTICAL_ALTERNATING"} disableToolbar={true} parseDetailsAsHTML={true} itemWidth={150} enableDarkToggle className={"m-0 p-0"} timelinePointDimension={25}/>
+      <Chrono items={items} fontSizes={customFontSizes} theme={customDarkTheme} timelinePointColor={"#ffffff"} mode={"VERTICAL_ALTERNATING"} disableToolbar={true} parseDetailsAsHTML={true} itemWidth={150} enableDarkToggle className={"m-0 p-0"} timelinePointDimension={30} lineWidth={6}/>
 
       <div class="content-wrapper p-0 px-4 mb-0">
 
