@@ -932,3 +932,17 @@ canvas {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
 }
+
+.rc-card-title {
+  font-weight: bold !important;
+}
+
+.rc-card-title > a {
+  /*
+  text-decoration: none !important;
+  */
+}
+
+.timeline-item-title {
+  font-weight: bold !important;
+}
