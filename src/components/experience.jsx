@@ -12,7 +12,7 @@ const Experience = () => {
       cardTitle: 'Interactive Digital Media MSc.',
       url: 'https://www.tcd.ie/',
       cardSubtitle:
-          'Infinica a Doxee Company, Vienna, Austria',
+          'Trinity College Dublin, Dublin, Ireland',
       cardDetailedText:
           `<ul style="background-color: #020203">
               <li>
@@ -142,7 +142,7 @@ const Experience = () => {
     cardForeColor: 'violet',
     timelineBgColor: '#000000',
 
-    primary: 'black',
+    primary: '#295b4e',
     secondary: '#295b4e',
     titleColorActive: 'White',
 

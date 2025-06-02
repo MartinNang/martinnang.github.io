@@ -36,6 +36,8 @@ import tuViennaLogo from "../assets/img/TU_Wien-Logo.svg";
 import slideImg0 from "../assets/img/homepage_image0.jpg";
 import slideImg1 from "../assets/img/homepage_image1.jpg";
 import slideImg2 from "../assets/img/homepage_image2.png";
+import slideImg3 from "../assets/img/3dsmax.jpg";
+import slideImgResearch from "../assets/img/research_paper_gameplay.png";
 
 const Home = () => {
   return (
@@ -51,12 +53,13 @@ const Home = () => {
                 height={335}
                 src={profile}
                 alt="Martin Nangole in front of a metal gate with some greenery in the background."
+                className={"mx-auto d-block"}
               />
             </Col>
             <Col className="mt-5 mt-lg-0" xs={12} lg={7}>
-              <div class="intro-text">
+              <div class="intro-text text-lg-start text-center">
                 <p>
-                  I'm a full-stack developer who is looking to work on{" "}
+                  I'm a <b>full-stack developer</b> who is looking to work on{" "}
                   <b>creative</b> and <b>innovative</b> projects.
                 </p>
               </div>
@@ -104,7 +107,7 @@ const Home = () => {
       </article>
 
       {/* Experience */}
-      <div class="experience-wrapper">
+      <div class="experience-wrapper pt-5 px-1 p-md-4">
         <Container>
           <Row>
             <Col>
@@ -120,7 +123,7 @@ const Home = () => {
                       <Container className="experience-subsection work-subsection p-3">
                         <Row className="align-items-center">
                           <Col xs={12} lg={4}>
-                            <img src={doxeeLogo} width={80} alt="Doxee logo." />
+                            <img src={doxeeLogo} width={80} alt="Doxee logo." className={"mx-auto d-block"}/>
                           </Col>
                           <Col xs={12} lg={8}>
                             <div>
@@ -140,6 +143,7 @@ const Home = () => {
                               src={bawagLogo}
                               width={80}
                               alt="BAWAG P.S.K. logo."
+                              className={"mx-auto d-block"}
                             />
                           </Col>
                           <Col xs={12} lg={8}>
@@ -164,6 +168,7 @@ const Home = () => {
                               src={bawagLogo}
                               width={80}
                               alt="BAWAG P.S.K. logo."
+                              className={"mx-auto d-block"}
                             />
                           </Col>
                           <Col xs={12} lg={8}>
@@ -204,6 +209,7 @@ const Home = () => {
                               src={tcdLogo}
                               width={80}
                               alt="Trinity College Dublin logo."
+                              className={"mx-auto d-block"}
                             />
                           </Col>
                           <Col xs={12} lg={6}>
@@ -228,6 +234,7 @@ const Home = () => {
                               src={tuViennaLogo}
                               width={80}
                               alt="University of Technology Vienna logo."
+                              className={"mx-auto d-block"}
                             />
                           </Col>
                           <Col xs={12} lg={6}>
@@ -250,7 +257,7 @@ const Home = () => {
         </Container>
       </div>
 
-      <Slideshow interval={5000} images={[slideImg0, slideImg1, slideImg2]} />
+      <Slideshow interval={5000} images={[slideImg3, slideImgResearch, slideImg0, slideImg1, slideImg2]} />
 
       <div class="bg-rect"></div>
     </div>
