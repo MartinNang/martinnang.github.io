@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.6378e66b.css",
-    "main.js": "/static/js/main.908d272c.js",
+    "main.css": "/static/css/main.dd68445b.css",
+    "main.js": "/static/js/main.4a398037.js",
     "static/js/488.7a876c9d.chunk.js": "/static/js/488.7a876c9d.chunk.js",
     "static/media/research_paper_gameplay.png": "/static/media/research_paper_gameplay.80a57e7d450f4135a6c6.png",
     "static/media/3dsmax.jpg": "/static/media/3dsmax.29472a45dff6de0de4b9.jpg",
@@ -32,12 +32,12 @@
     "static/media/spring-svgrepo-com.svg": "/static/media/spring-svgrepo-com.acf04d1c0a137695fff363d37d383e64.svg",
     "static/media/css3-02-svgrepo-com.svg": "/static/media/css3-02-svgrepo-com.0b435e818710854aebd35efe9280f77c.svg",
     "static/media/angular-svgrepo-com.svg": "/static/media/angular-svgrepo-com.3189e15b65a3006cde6f76f917b3ce4b.svg",
-    "main.6378e66b.css.map": "/static/css/main.6378e66b.css.map",
-    "main.908d272c.js.map": "/static/js/main.908d272c.js.map",
+    "main.dd68445b.css.map": "/static/css/main.dd68445b.css.map",
+    "main.4a398037.js.map": "/static/js/main.4a398037.js.map",
     "488.7a876c9d.chunk.js.map": "/static/js/488.7a876c9d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6378e66b.css",
-    "static/js/main.908d272c.js"
+    "static/css/main.dd68445b.css",
+    "static/js/main.4a398037.js"
   ]
 }
