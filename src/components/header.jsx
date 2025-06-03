@@ -14,6 +14,7 @@ const Header = () => {
 
   useEffect(() => {
     console.log("scrolling to top");
+    console.log(location.pathname);
     window.scrollTo({ top: 0, left: 0, behavior: "instant" });
   }, [location.pathname]);
 
@@ -28,30 +29,30 @@ const Header = () => {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ms-auto" activeKey="1">
               <Nav.Item eventKey="1">
-                <Nav.Link href="/#" onClick={window.scrollTo(0, 0)}>
+                <Nav.Link href="/#" onClick={window.scrollTo(0, 0)} className={location.pathname === "/" ? "active" : ""}>
                   home
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link href="/#/experience">experience</Nav.Link>
+                <Nav.Link href="/#/experience" className={location.pathname === "/experience" ? "active" : ""}>experience</Nav.Link>
               </Nav.Item>
               <Nav.Item>
                 <NavDropdown title="projects" id="collapsible-nav-dropdown">
-                  <NavDropdown.Item href="/#/projects/games">
+                  <NavDropdown.Item href="/#/projects/games" className={location.pathname === "/projects/games" ? "active" : ""}>
                     games
                   </NavDropdown.Item>
-                  <NavDropdown.Item href="/#/projects/music">
+                  <NavDropdown.Item href="/#/projects/music" className={location.pathname === "/projects/music" ? "active" : ""}>
                     music
                   </NavDropdown.Item>
-                  <NavDropdown.Item href="/#/projects/repositories">
+                  <NavDropdown.Item href="/#/projects/repositories" className={location.pathname === "/projects/repositories" ? "active" : ""}>
                     repositories
                   </NavDropdown.Item>
                   <NavDropdown.Divider />
-                  <NavDropdown.Item href="/#/projects">all</NavDropdown.Item>
+                  <NavDropdown.Item href="/#/projects" className={location.pathname === "/projects" ? "active" : ""}>all</NavDropdown.Item>
                 </NavDropdown>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link href="/#/contact">contact</Nav.Link>
+                <Nav.Link href="/#/contact" className={location.pathname === "/contact" ? "active" : ""}>contact</Nav.Link>
               </Nav.Item>
             </Nav>
           </Navbar.Collapse>
