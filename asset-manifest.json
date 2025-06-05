@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.dc5308e7.css",
-    "main.js": "/static/js/main.13a1981a.js",
+    "main.js": "/static/js/main.373db78a.js",
     "static/js/488.7a876c9d.chunk.js": "/static/js/488.7a876c9d.chunk.js",
     "static/media/research_paper_gameplay.png": "/static/media/research_paper_gameplay.80a57e7d450f4135a6c6.png",
     "static/media/3dsmax.jpg": "/static/media/3dsmax.29472a45dff6de0de4b9.jpg",
@@ -33,11 +33,11 @@
     "static/media/css3-02-svgrepo-com.svg": "/static/media/css3-02-svgrepo-com.0b435e818710854aebd35efe9280f77c.svg",
     "static/media/angular-svgrepo-com.svg": "/static/media/angular-svgrepo-com.3189e15b65a3006cde6f76f917b3ce4b.svg",
     "main.dc5308e7.css.map": "/static/css/main.dc5308e7.css.map",
-    "main.13a1981a.js.map": "/static/js/main.13a1981a.js.map",
+    "main.373db78a.js.map": "/static/js/main.373db78a.js.map",
     "488.7a876c9d.chunk.js.map": "/static/js/488.7a876c9d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dc5308e7.css",
-    "static/js/main.13a1981a.js"
+    "static/js/main.373db78a.js"
   ]
 }
