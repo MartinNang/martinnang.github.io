@@ -173,7 +173,7 @@ const Experience = () => {
 
   return (
     <div>
-      <Container>
+      {/*<Container>
         <Row>
           <Col>
             <h2>
@@ -184,7 +184,7 @@ const Experience = () => {
 
           </Col>
         </Row>
-      </Container>
+      </Container>*/}
 
       <Chrono items={items} fontSizes={customFontSizes} theme={customDarkTheme} timelinePointColor={"#ffffff"} mode={"VERTICAL_ALTERNATING"} disableToolbar={true} parseDetailsAsHTML={true} itemWidth={150} enableDarkToggle className={"m-0 p-0"} timelinePointDimension={30} lineWidth={6}/>
 

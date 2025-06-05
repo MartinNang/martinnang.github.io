@@ -946,3 +946,20 @@ canvas {
 .timeline-item-title {
   font-weight: bold !important;
 }
+
+.card {
+  transition: transform 0.2s ease-out;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card .btn {
+  border: #295b4e solid;
+}
+
+.card .btn:hover {
+  background-color: #1c3d34;
+  border: #1c3d34 solid;
+}
