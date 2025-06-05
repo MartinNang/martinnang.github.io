@@ -215,7 +215,7 @@ const Projects = () => {
               <h2>{loading ? "loading" : ""}</h2>
               <Row>
                 <Col md={6} className={"px-3"}>
-                  {projects.slice(0, projects.length/2+1).map((project, i) => (
+                  {projects.filter((value, index) => index % 2 === 0).map((project, i) => (
                       <Row className={""}>
                         <CustomCard
                             id={i}
@@ -233,7 +233,7 @@ const Projects = () => {
                   ))}
                 </Col>
                 <Col md={6} className={"px-3"}>
-                  {projects.slice(projects.length/2+1).map((project, i) => (
+                  {projects.filter((value, index) => index % 2 === 1).map((project, i) => (
                       <Row>
                         <CustomCard
                             id={i}

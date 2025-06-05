@@ -1,14 +1,59 @@
 {
   "projects": [
     {
-      "Name": "Audio Soundscape",
+      "Name": "Preserving Kenyan Oral Literature Through Environmental Storytelling",
       "Status": "Complete",
-      "Date": "2024-10-25T00:00:00Z",
-      "Audio": "CS7028 Audio Assignment 2- Nangole Martin_Inbetween.wav",
-      "Loop": true,
-      "Tags": ["Audio"],
+      "Date": "2025-05-15T00:00:00Z",
+      "Tags": ["Research"],
+      "Image": ["research_gameplay_screenshot_140525.png", "research_gameplay2_screenshot_140525.png", "research_map_screenshot_140525.png", "research_gameplay_leopard_screenshot_140525.png", "research_gameplay_farm_animals_screenshot_140525.png", "research_gameplay_dog_screenshot_140525.png"],
+      "Link": "/documents/Preserving_Kenyan_Oral_Traditions_Through_Environmental_Storytelling.pdf",
+      "LinkText": "Read the paper",
       "Description": [
-        "An immersive audio soundscape created to evoke different moods using ambient sounds."
+        "Environmental storytelling is a form of storytelling commonly used in video games that relies on spatial design for the purpose of conveying a narrative. This paper analyses the potential of environmental storytelling in embedding Kenyan oral traditions in an effort to digitally preserve Indigenous oral literature through the use of Interactive Digital Narratives (IDNs). First, a literature review is conducted to find taxonomies and decide on definitions related to the topics of IDNs, Indigenous people, and environmental storytelling. Then, an interview analysis was conducted to explore the need, practicality and ethics behind the digitisation of oral traditions in IDNs. Finally, a prototype was developed to put insights from the prior sections into practice. We find that while environmental storytelling presents an opportunity in IDNs to preserve Kenyan oral traditions in a way that emphasizes multiple perspectives, challenges remain in the preservation of the storyteller’s performance."
+      ]
+    },
+    {
+      "Name": "En Route",
+      "Status": "Complete",
+      "Date": "2025-04-25T00:00:00Z",
+      "Image": ["en-route-homepage.png","en-route-events-search.png", "en-route-inside-itinerary.png", "en-route-itineraries.png"],
+      "Tags": ["Branding & Design", "Frontend", "Backend"],
+      "Link": "https://martinnang.github.io/en-route/",
+      "LinkText": "Visit website",
+      "Description": [
+        "Implemented REST-API and React components for a travel itinerary web-application in Node.JS, Express.js, React and React-Bootstrap and using the OpenStreetMap database through Overpass API."
+      ]
+    },
+    {
+      "Name": "Chichén Itzá",
+      "Status": "Complete",
+      "Date": "2025-04-04T00:00:00Z",
+      "Image": ["chichen-itza-website_index.html.png", "chichen-itza-website_history.html.png", "chichen-itza-website_map.html.png", "chichen-itza-website_El_castillo.html.png", "chichen-itza-website_thequiz.html.png", "chichen-itza-website_thequiz.html (1).png"],
+      "Tags": ["Branding & Design", "Frontend"],
+      "Link": "https://martinnang.github.io/chichen-itza-website/",
+      "LinkText": "Visit website",
+      "Description": [
+        "Designed low-fidelity wireframes and implemented A child-friendly, educational website for the archaeological site of Chichén Itzá using HTML5, CSS3, Bootstrap and JavaScript."
+      ]
+    },
+    {
+      "Name": "Maeve",
+      "Status": "Ongoing",
+      "Date": "2025-03-03T00:00:00Z",
+      "Image": ["maevesafety_logo.jpeg"],
+      "Tags": ["Branding & Design", "Research"],
+      "Description": [
+        "Conducted UX research, including surveys and semi-structured interviews, for a data-driven safety app for women. Participated in mentoring programs and pitch sessions as part of phase 1 of Launchbox, the Student Accelerator at Trinity College Dublin."
+      ]
+    },
+    {
+      "Name": "3DS Max Scene",
+      "Status": "Complete",
+      "Date": "2024-12-10T00:00:00Z",
+      "Image": ["3dsmax.jpg"],
+      "Tags": ["3D Modelling"],
+      "Description": [
+        "A prototype of a mobile app designed for task management, built using a popular prototyping tool."
       ]
     },
     {
@@ -22,59 +67,14 @@
       ]
     },
     {
-      "Name": "Chichén Itzá",
+      "Name": "Audio Soundscape",
       "Status": "Complete",
-      "Date": "2025-04-15T00:00:00Z",
-      "Image": ["chichen-itza-website_index.html.png", "chichen-itza-website_history.html.png", "chichen-itza-website_map.html.png", "chichen-itza-website_El_castillo.html.png", "chichen-itza-website_thequiz.html.png", "chichen-itza-website_thequiz.html (1).png"],
-      "Tags": ["Branding & Design", "Frontend"],
-      "Link": "https://martinnang.github.io/chichen-itza-website/",
-      "LinkText": "Visit website",
+      "Date": "2024-10-25T00:00:00Z",
+      "Audio": "CS7028 Audio Assignment 2- Nangole Martin_Inbetween.wav",
+      "Loop": true,
+      "Tags": ["Audio"],
       "Description": [
-        "Designed low-fidelity wireframes and implemented A child-friendly, educational website for the archaeological site of Chichén Itzá using HTML5, CSS3, Bootstrap and JavaScript."
-      ]
-    },
-    {
-      "Name": "En Route",
-      "Status": "Complete",
-      "Date": "2025-04-15T00:00:00Z",
-      "Image": ["en-route-events-search.png"],
-      "Tags": ["Branding & Design", "Frontend", "Backend"],
-      "Link": "https://martinnang.github.io/en-route/",
-      "LinkText": "Visit website",
-      "Description": [
-        "Implemented REST-API and React components for a travel itinerary web-application in Node.JS, Express.js, React and React-Bootstrap and using the OpenStreetMap database through Overpass API."
-      ]
-    },
-    {
-      "Name": "Maeve",
-      "Status": "Complete",
-      "Date": "2025-01-21T00:00:00Z",
-      "Image": ["maevesafety_logo.jpeg"],
-      "Tags": ["Branding & Design", "Research"],
-      "Description": [
-        "Conducted UX research, including surveys and semi-structured interviews, for a data-driven safety app for women. Participated in mentoring programs and pitch sessions as part of phase 1 of Launchbox, the Student Accelerator at Trinity College Dublin."
-      ]
-    },
-    {
-      "Name": "Ticketing Service Mockup",
-      "Status": "Complete",
-      "Date": "2020-03-30T00:00:00Z",
-      "Image": ["View Event.png"],
-      "Tags": ["App Design", "Media & Prototypes"],
-      "Description": [
-        "A prototype of a mobile app designed for task management, built using a popular prototyping tool."
-      ]
-    },
-    {
-      "Name": "Preserving Kenyan Oral Literature Through Environmental Storytelling",
-      "Status": "Complete",
-      "Date": "2025-05-15T00:00:00Z",
-      "Tags": ["Research"],
-      "Image": ["research_gameplay_screenshot_140525.png", "research_gameplay2_screenshot_140525.png", "research_map_screenshot_140525.png", "research_gameplay_leopard_screenshot_140525.png", "research_gameplay_farm_animals_screenshot_140525.png", "research_gameplay_dog_screenshot_140525.png"],
-      "Link": "/documents/Preserving_Kenyan_Oral_Traditions_Through_Environmental_Storytelling.pdf",
-      "LinkText": "Read the paper",
-      "Description": [
-        "Environmental storytelling is a form of storytelling commonly used in video games that relies on spatial design for the purpose of conveying a narrative. This paper analyses the potential of environmental storytelling in embedding Kenyan oral traditions in an effort to digitally preserve Indigenous oral literature through the use of Interactive Digital Narratives (IDNs). First, a literature review is conducted to find taxonomies and decide on definitions related to the topics of IDNs, Indigenous people, and environmental storytelling. Then, an interview analysis was conducted to explore the need, practicality and ethics behind the digitisation of oral traditions in IDNs. Finally, a prototype was developed to put insights from the prior sections into practice. We find that while environmental storytelling presents an opportunity in IDNs to preserve Kenyan oral traditions in a way that emphasizes multiple perspectives, challenges remain in the preservation of the storyteller’s performance."
+        "An immersive audio soundscape created to evoke different moods using ambient sounds."
       ]
     },
     {
@@ -90,11 +90,11 @@
       ]
     },
     {
-      "Name": "3DS Max Scene",
+      "Name": "Ticketing Service Mockup",
       "Status": "Complete",
-      "Date": "2024-12-10T00:00:00Z",
-      "Image": ["3dsmax.jpg"],
-      "Tags": ["3D Modelling"],
+      "Date": "2020-03-30T00:00:00Z",
+      "Image": ["View Event.png"],
+      "Tags": ["App Design", "Media & Prototypes"],
       "Description": [
         "A prototype of a mobile app designed for task management, built using a popular prototyping tool."
       ]

@@ -1,4 +1,4 @@
-import {Card, CardBody, CardFooter, CardImg, Carousel} from "react-bootstrap";
+import {Badge, Card, CardBody, CardFooter, CardImg, Carousel} from "react-bootstrap";
 /**
  * A basic Bootstrap card template for projects.
  * @param {id} id of the dynamically generated element
@@ -73,7 +73,11 @@ const CustomCard = ({
         )}
       </CardBody>
       <CardFooter className="row">
-        <small class="text-light">{tags ? "Tags: " + tags : tags}</small>
+        <small class="text-light">{tags ?
+            tags.map((tag, i) => (
+                <Badge bg="secondary" className={"me-1"}>{tag}</Badge>
+            ))
+            : tags}</small>
       </CardFooter>
     </Card>
   );
