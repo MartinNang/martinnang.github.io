@@ -6,7 +6,7 @@
 import React, { useEffect, useState } from "react";
 import data from "../assets/data/projects.json"; //project data
 import CustomCard from "./card";
-import {Row, Col} from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 
 const Projects = () => {
   const [loading, setLoading] = useState(false);
@@ -145,39 +145,8 @@ const Projects = () => {
   return (
     <div>
       {/* Projects page content */}
-      <div class="container" style={{ maxWidth: "100%", padding: "0" }}>
-        <article
-          id="projects-content"
-          class="row project-container p-5 pt-0 pb-0 mb-lg-5 pt-4">
-          {/* Games panel */}
-          <a
-            class="project-panel panel-1 col-12 col-lg-5"
-            style={{ marginRight: "30px" }}
-            href="#/projects/games">
-            <div class="panel-header">
-              <p>Games</p>
-            </div>
-          </a>
-          {/* Music panel */}
-          <a
-            class="project-panel panel-2 col-12 col-lg-5"
-            style={{ marginRight: "30px" }}
-            href="#/projects/music">
-            <div class="panel-header">
-              <p>Music</p>
-            </div>
-          </a>
-          <a
-            class="project-panel panel-3 col-12 col-lg-5"
-            href="#/projects/repositories">
-            <div class="panel-header">
-              <p>Repositories</p>
-            </div>
-          </a>
-        </article>
-      </div>
       <div class="container">
-        <article class="content-wrapper row" style={{ marginTop: "-150px" }}>
+        <article class="content-wrapper row">
           <h1>Projects</h1>
           <div class="container">
             <div class="row">
@@ -215,50 +184,84 @@ const Projects = () => {
               <h2>{loading ? "loading" : ""}</h2>
               <Row>
                 <Col md={6} className={"px-3"}>
-                  {projects.filter((value, index) => index % 2 === 0).map((project, i) => (
+                  {projects
+                    .filter((value, index) => index % 2 === 0)
+                    .map((project, i) => (
                       <Row className={""}>
                         <CustomCard
-                            id={i}
-                            images={project.Image}
-                            name={project.Name}
-                            loop={project.Loop}
-                            audio={project.Audio}
-                            date={new Date(project.Date)}
-                            description={project.Description}
-                            link={project.Link}
-                            linkText={project.LinkText}
-                            tags={project.Tags}
+                          id={i}
+                          images={project.Image}
+                          name={project.Name}
+                          loop={project.Loop}
+                          audio={project.Audio}
+                          date={new Date(project.Date)}
+                          description={project.Description}
+                          link={project.Link}
+                          linkText={project.LinkText}
+                          tags={project.Tags}
                         />
                       </Row>
-                  ))}
+                    ))}
                 </Col>
                 <Col md={6} className={"px-3"}>
-                  {projects.filter((value, index) => index % 2 === 1).map((project, i) => (
+                  {projects
+                    .filter((value, index) => index % 2 === 1)
+                    .map((project, i) => (
                       <Row>
                         <CustomCard
-                            id={i}
-                            images={project.Image}
-                            name={project.Name}
-                            loop={project.Loop}
-                            audio={project.Audio}
-                            date={new Date(project.Date)}
-                            description={project.Description}
-                            link={project.Link}
-                            linkText={project.LinkText}
-                            tags={project.Tags}
+                          id={i}
+                          images={project.Image}
+                          name={project.Name}
+                          loop={project.Loop}
+                          audio={project.Audio}
+                          date={new Date(project.Date)}
+                          description={project.Description}
+                          link={project.Link}
+                          linkText={project.LinkText}
+                          tags={project.Tags}
                         />
                       </Row>
-                  ))}
+                    ))}
                 </Col>
               </Row>
-
-
             </div>
           </div>
         </article>
       </div>
+      <div class="container" style={{ maxWidth: "100%", padding: "0" }}>
+        <article
+          id="projects-content"
+          class="row project-container p-5 pt-0 pb-0 mb-lg-5 pt-4">
+          {/* Games panel */}
+          <a
+            class="project-panel panel-1 col-12 col-lg-5"
+            style={{ marginRight: "30px" }}
+            href="#/projects/games">
+            <div class="panel-header">
+              <p>Games</p>
+            </div>
+          </a>
+          {/* Music panel */}
+          <a
+            class="project-panel panel-2 col-12 col-lg-5"
+            style={{ marginRight: "30px" }}
+            href="#/projects/music">
+            <div class="panel-header">
+              <p>Music</p>
+            </div>
+          </a>
+          <a
+            class="project-panel panel-3 col-12 col-lg-5"
+            href="#/projects/repositories">
+            <div class="panel-header">
+              <p>Repositories</p>
+            </div>
+          </a>
+        </article>
+      </div>
+
       {/* Background rectangle */}
-      <div class="bg-rect" style={{ height: "450px" }}></div>
+      <div class="bg-rect" style={{ height: "0px" }}></div>
     </div>
   );
 };
