@@ -228,6 +228,7 @@ const Projects = () => {
           </div>
         </article>
       </div>
+      <Row></Row>
       <div class="container" style={{ maxWidth: "100%", padding: "0" }}>
         <article
           id="projects-content"
@@ -267,3 +268,17 @@ const Projects = () => {
 };
 
 export default Projects;
+
+// ,
+//     {
+//       "Name": "Bias in Machine Learning Algorithms for Automotive Applications and Related Ethical Concerns",
+//       "Status": "Complete",
+//       "Date": "2022-10-30T00:00:00Z",
+//       "Tags": ["Research"],
+//       "Link": "/documents/Bias_in_Machine_Learning_Algorithms_for_Automotive_Applications_and_Related_Ethical_Concerns.pdf",
+//       "LinkText": "Read the paper",
+//       "Description": [
+//         "Machine learning (ML) is an ever-expanding field of research that has garnered attention over the past decades for breakthrough performances in the completion of complex tasks that were once thought to be only achievable to humans. With an increasing demand for automated decision systems based on ML, the automotive industry is now preparing for the development and widespread adoption of autonomous vehicles. At the same time, however, a growing number of issues related to bias in the performance of ML algorithms is raising concerns about the current state of fairness in algorithms and whether or not ML algorithms can be trusted to make fair decisions under realistic circumstances, particularly when the safety of a human is at risk.",
+//         "This thesis aims to review literature surrounding the topic of algorithmic bias in computer vision (CV) and provide information about possible causes of algorithmic bias, the practical effects of bias in CV and concrete strategies for overcoming bias in automotive applications specifically. In doing so, we delve into relevant works, discuss notable instances of algorithmic bias in practice within recent memory and cover some of the underlying theories in computer vision and machine learning."
+//       ]
+//     },

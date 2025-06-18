@@ -5,6 +5,7 @@
 
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { Carousel } from "react-bootstrap";
 
 export function Slideshow({ images = [], interval = 5000 }) {
   const [thumbnails, setThumbnails] = useState([]);
@@ -45,8 +46,39 @@ export function Slideshow({ images = [], interval = 5000 }) {
     }
   }
 
+  const carouselItems = images.map(function (image) {
+    return (
+      <Carousel.Item>
+        <img
+          src={image}
+          style={{
+            width: "100%",
+            objectPosition: "center",
+            objectFit: "cover",
+            maxHeight: "600px",
+          }}
+        />
+      </Carousel.Item>
+    );
+  });
+
   return (
-    <div className="projects-slider">
+    <Link to="/projects">
+      <Carousel
+        fade
+        style={{ maxHeight: "600px" }}
+        controls={false}
+        indicators={false}
+        interval={2000}
+        className="slideshow-carousel">
+        {carouselItems}
+      </Carousel>
+    </Link>
+  );
+}
+
+{
+  /* <div className="projects-slider">
       <article>
         <Link to="projects">
           <h2 class="slideshow-button">Projects</h2>
@@ -65,6 +97,5 @@ export function Slideshow({ images = [], interval = 5000 }) {
           </a>
         </div>
       </article>
-    </div>
-  );
+    </div> */
 }

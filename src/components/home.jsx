@@ -33,9 +33,9 @@ import tcdLogo from "../assets/img/tcd_logo.svg";
 import tuViennaLogo from "../assets/img/TU_Wien-Logo.svg";
 
 // Slideshow images
-import slideImg0 from "../assets/img/homepage_image0.jpg";
-import slideImg1 from "../assets/img/homepage_image1.jpg";
-import slideImg2 from "../assets/img/homepage_image2.png";
+import slideImg0 from "../assets/img/chichen_itza_screens.png";
+import slideImg1 from "../assets/img/en-route-homepage.png";
+import slideImg2 from "../assets/img/View Event.png";
 import slideImg3 from "../assets/img/3dsmax.jpg";
 import slideImgResearch from "../assets/img/research_paper_gameplay.png";
 
@@ -67,24 +67,36 @@ const Home = () => {
           </Row>
         </Container>
       </article>
-      <hr id="intro-seperator" />
+      {/* <hr id="intro-seperator" /> */}
 
-      {/* Skills */}
+      {/* Skills 
       <article class="content-wrapper home-section">
         <section>
           <h2 className="ms-5">Skills</h2>
+          <Container>
+            <Row>
+              <h3>Languages</h3>
+            </Row>
+            <Row className="mt-4">
+              <Skill name={"Java"} icon={html5Icon}></Skill>
+              <Skill name={"JavaScript"} icon={bootstrapIcon}></Skill>
+              <Skill name={"HTML"} icon={javascriptIcon}></Skill>
+              <Skill name={"CSS"} icon={cssIcon}></Skill>
+              <Skill name={"TypeScript"} icon={typescriptIcon}></Skill>
+              <Skill name={"XML"} icon={xmlIcon}></Skill>
+              <Skill name={"SQL"} icon={reactIcon}></Skill>
+            </Row>
+          </Container>
+        </section>
+        <section>
           <Container>
             <Row className="ms-5 mt-4 justify-content-center">
               <h3>Frontend</h3>
             </Row>
             <Row className="mt-4">
-              <Skill name={"HTML5"} icon={html5Icon}></Skill>
               <Skill name={"Bootstrap"} icon={bootstrapIcon}></Skill>
-              <Skill name={"JavaScript"} icon={javascriptIcon}></Skill>
-              <Skill name={"CSS3"} icon={cssIcon}></Skill>
               <Skill name={"React"} icon={reactIcon}></Skill>
               <Skill name={"Angular"} icon={angularIcon}></Skill>
-              <Skill name={"TypeScript"} icon={typescriptIcon}></Skill>
             </Row>
           </Container>
         </section>
@@ -95,25 +107,25 @@ const Home = () => {
             </Row>
             <Row className="mt-4">
               <Skill name={"Java"} icon={javaIcon}></Skill>
-              <Skill name={"XML"} icon={xmlIcon}></Skill>
-              <Skill name={"Spring"} icon={springIcon}></Skill>
+              <Skill name={"Spring Boot"} icon={springIcon}></Skill>
               <Skill name={"Maven"} icon={mavenIcon}></Skill>
               <Skill name={"Tomcat"} icon={tomcatIcon}></Skill>
-              <Skill name={"Selenium"} icon={seleniumIcon}></Skill>
+              <Skill name={"Node.js"}></Skill>
+              <Skill name={"Express.js"}></Skill>
             </Row>
           </Container>
           <div class="skills-wrapper"></div>
         </section>
-      </article>
+      </article>*/}
 
       {/* Experience */}
       <div class="experience-wrapper pt-5 px-1 p-md-4 home-section">
         <Container>
           <Row>
-            <Col>
+            <Col xs={12} md={6}>
               {/* Work */}
               <article class="experience-section work-experience">
-                <h2>
+                <h2 class="my-5">
                   <Link to="/experience#work-experience">Work Experience</Link>
                 </h2>
 
@@ -123,7 +135,12 @@ const Home = () => {
                       <Container className="experience-subsection work-subsection p-3">
                         <Row className="align-items-center">
                           <Col xs={12} lg={4}>
-                            <img src={doxeeLogo} width={80} alt="Doxee logo." className={"mx-auto d-block"}/>
+                            <img
+                              src={doxeeLogo}
+                              width={80}
+                              alt="Doxee logo."
+                              className={"mx-auto d-block"}
+                            />
                           </Col>
                           <Col xs={12} lg={8}>
                             <div>
@@ -189,10 +206,10 @@ const Home = () => {
                 </Container>
               </article>
             </Col>
-            <Col>
+            <Col xs={12} md={6}>
               {/* Education */}
               <article class="experience-section education">
-                <h2>
+                <h2 class="my-5">
                   <Link to="/experience#education-experience">Education</Link>
                 </h2>
                 <Container>
@@ -254,10 +271,24 @@ const Home = () => {
               </article>
             </Col>
           </Row>
+          <Row className="mb-4">
+            <h2 class="my-5 mx-auto w-100" style={{ textAlign: "center" }}>
+              <Link to="/projects">Projects</Link>
+            </h2>{" "}
+            <Slideshow
+              className={"home-section"}
+              interval={5000}
+              images={[
+                slideImg0,
+                slideImg1,
+                slideImg2,
+                slideImg3,
+                slideImgResearch,
+              ]}
+            />
+          </Row>
         </Container>
       </div>
-
-      <Slideshow className={"home-section"} interval={5000} images={[slideImg3, slideImgResearch, slideImg0, slideImg1, slideImg2]} />
 
       <div class="bg-rect"></div>
     </div>

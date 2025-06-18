@@ -4,8 +4,15 @@
       "Name": "Preserving Kenyan Oral Literature Through Environmental Storytelling",
       "Status": "Complete",
       "Date": "2025-05-15T00:00:00Z",
-      "Tags": ["Research"],
-      "Image": ["research_gameplay_screenshot_140525.png", "research_gameplay2_screenshot_140525.png", "research_map_screenshot_140525.png", "research_gameplay_leopard_screenshot_140525.png", "research_gameplay_farm_animals_screenshot_140525.png", "research_gameplay_dog_screenshot_140525.png"],
+      "Tags": ["Research Paper", "Unity"],
+      "Image": [
+        "research_gameplay_screenshot_140525.png",
+        "research_gameplay2_screenshot_140525.png",
+        "research_map_screenshot_140525.png",
+        "research_gameplay_leopard_screenshot_140525.png",
+        "research_gameplay_farm_animals_screenshot_140525.png",
+        "research_gameplay_dog_screenshot_140525.png"
+      ],
       "Link": "/documents/Preserving_Kenyan_Oral_Traditions_Through_Environmental_Storytelling.pdf",
       "LinkText": "Read the paper",
       "Description": [
@@ -16,8 +23,13 @@
       "Name": "En Route",
       "Status": "Complete",
       "Date": "2025-04-25T00:00:00Z",
-      "Image": ["en-route-homepage.png","en-route-events-search.png", "en-route-inside-itinerary.png", "en-route-itineraries.png"],
-      "Tags": ["Branding & Design", "Frontend", "Backend"],
+      "Image": [
+        "en-route-homepage.png",
+        "en-route-events-search.png",
+        "en-route-inside-itinerary.png",
+        "en-route-itineraries.png"
+      ],
+      "Tags": ["React.js", "Node.js", "Express.js", "MariaDB"],
       "Link": "https://martinnang.github.io/en-route/",
       "LinkText": "Visit website",
       "Description": [
@@ -28,8 +40,15 @@
       "Name": "Chichén Itzá",
       "Status": "Complete",
       "Date": "2025-04-04T00:00:00Z",
-      "Image": ["chichen-itza-website_index.html.png", "chichen-itza-website_history.html.png", "chichen-itza-website_map.html.png", "chichen-itza-website_El_castillo.html.png", "chichen-itza-website_thequiz.html.png", "chichen-itza-website_thequiz.html (1).png"],
-      "Tags": ["Branding & Design", "Frontend"],
+      "Image": [
+        "chichen-itza-website_index.html.png",
+        "chichen-itza-website_history.html.png",
+        "chichen-itza-website_map.html.png",
+        "chichen-itza-website_El_castillo.html.png",
+        "chichen-itza-website_thequiz.html.png",
+        "chichen-itza-website_thequiz.html (1).png"
+      ],
+      "Tags": ["UI/UX", "Bootstrap", "Javascript", "HTML5", "CSS3"],
       "Link": "https://martinnang.github.io/chichen-itza-website/",
       "LinkText": "Visit website",
       "Description": [
@@ -37,64 +56,11 @@
       ]
     },
     {
-      "Name": "Maeve",
-      "Status": "Ongoing",
-      "Date": "2025-03-03T00:00:00Z",
-      "Image": ["maevesafety_logo.jpeg"],
-      "Tags": ["Branding & Design", "Research"],
-      "Description": [
-        "Conducted UX research, including surveys and semi-structured interviews, for a data-driven safety app for women. Participated in mentoring programs and pitch sessions as part of phase 1 of Launchbox, the Student Accelerator at Trinity College Dublin."
-      ]
-    },
-    {
-      "Name": "3DS Max Scene",
-      "Status": "Complete",
-      "Date": "2024-12-10T00:00:00Z",
-      "Image": ["3dsmax.jpg"],
-      "Tags": ["3D Modelling"],
-      "Description": [
-        "A prototype of a mobile app designed for task management, built using a popular prototyping tool."
-      ]
-    },
-    {
-      "Name": "Ice Cream Shop Branding",
-      "Status": "Complete",
-      "Date": "2024-12-06T00:00:00Z",
-      "Image": ["Murphy_s Ice Cream Logo.jpg", "Murphy_s Ice Cream Pint.png", "Murphy_s Ice Cream Punch Card.jpg", "Murphy_s Ice Cream Desktop.jpg", "Murphy_s Instagram Mockup.jpg", "Murphy_s Ice Cream Mobile.png"],
-      "Tags": ["Branding & Design"],
-      "Description": [
-        "A branding project for an ice cream shop, including logo design, color palette, and promotional materials."
-      ]
-    },
-    {
-      "Name": "Audio Soundscape",
-      "Status": "Complete",
-      "Date": "2024-10-25T00:00:00Z",
-      "Audio": "CS7028 Audio Assignment 2- Nangole Martin_Inbetween.wav",
-      "Loop": true,
-      "Tags": ["Audio"],
-      "Description": [
-        "An immersive audio soundscape created to evoke different moods using ambient sounds."
-      ]
-    },
-    {
-      "Name": "Bias in Machine Learning Algorithms for Automotive Applications and Related Ethical Concerns",
-      "Status": "Complete",
-      "Date": "2022-10-30T00:00:00Z",
-      "Tags": ["Research"],
-      "Link": "/documents/Bias_in_Machine_Learning_Algorithms_for_Automotive_Applications_and_Related_Ethical_Concerns.pdf",
-      "LinkText": "Read the paper",
-      "Description": [
-        "Machine learning (ML) is an ever-expanding field of research that has garnered attention over the past decades for breakthrough performances in the completion of complex tasks that were once thought to be only achievable to humans. With an increasing demand for automated decision systems based on ML, the automotive industry is now preparing for the development and widespread adoption of autonomous vehicles. At the same time, however, a growing number of issues related to bias in the performance of ML algorithms is raising concerns about the current state of fairness in algorithms and whether or not ML algorithms can be trusted to make fair decisions under realistic circumstances, particularly when the safety of a human is at risk.",
-        "This thesis aims to review literature surrounding the topic of algorithmic bias in computer vision (CV) and provide information about possible causes of algorithmic bias, the practical effects of bias in CV and concrete strategies for overcoming bias in automotive applications specifically. In doing so, we delve into relevant works, discuss notable instances of algorithmic bias in practice within recent memory and cover some of the underlying theories in computer vision and machine learning."
-      ]
-    },
-    {
-      "Name": "Ticketing Service Mockup",
+      "Name": "Ticketline",
       "Status": "Complete",
       "Date": "2020-03-30T00:00:00Z",
       "Image": ["View Event.png"],
-      "Tags": ["App Design", "Media & Prototypes"],
+      "Tags": ["UI/UX", "Bootstrap", "TypeScript", "Angular", "Java", "H2"],
       "Description": [
         "A prototype of a mobile app designed for task management, built using a popular prototyping tool."
       ]

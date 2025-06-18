@@ -29,15 +29,24 @@ const Header = () => {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ms-auto" activeKey="1">
               <Nav.Item eventKey="1">
-                <Nav.Link href="/#" onClick={window.scrollTo(0, 0)} className={location.pathname === "/" ? "active" : ""}>
+                <Nav.Link
+                  href="/#"
+                  onClick={window.scrollTo(0, 0)}
+                  className={location.pathname === "/" ? "active" : ""}>
                   home
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link href="/#/experience" className={location.pathname === "/experience" ? "active" : ""}>experience</Nav.Link>
+                <Nav.Link
+                  href="/#/experience"
+                  className={
+                    location.pathname === "/experience" ? "active" : ""
+                  }>
+                  experience
+                </Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <NavDropdown title="projects" id="collapsible-nav-dropdown">
+                {/* <NavDropdown title="projects" id="collapsible-nav-dropdown">
                   <NavDropdown.Item href="/#/projects/games" className={location.pathname === "/projects/games" ? "active" : ""}>
                     games
                   </NavDropdown.Item>
@@ -49,10 +58,19 @@ const Header = () => {
                   </NavDropdown.Item>
                   <NavDropdown.Divider />
                   <NavDropdown.Item href="/#/projects" className={location.pathname === "/projects" ? "active" : ""}>all</NavDropdown.Item>
-                </NavDropdown>
+                </NavDropdown> */}
+                <Nav.Link
+                  href="/#/projects"
+                  className={location.pathname === "/projects" ? "active" : ""}>
+                  projects
+                </Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link href="/#/contact" className={location.pathname === "/contact" ? "active" : ""}>contact</Nav.Link>
+                <Nav.Link
+                  href="/#/contact"
+                  className={location.pathname === "/contact" ? "active" : ""}>
+                  contact
+                </Nav.Link>
               </Nav.Item>
             </Nav>
           </Navbar.Collapse>

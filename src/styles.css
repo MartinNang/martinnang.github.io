@@ -20,11 +20,11 @@ h3 {
 }
 
 h1 {
-  font-size: 4em;
+  font-size: 3em;
 }
 
 h2 {
-  font-size: 2.5em;
+  font-size: 2em;
 }
 
 h2 a {
@@ -35,7 +35,7 @@ p,
 label {
   font-family: "Inter", sans-serif;
 
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 #intro-seperator {
@@ -430,7 +430,7 @@ p.subsection-organization {
 
 .experience-wrapper {
   background-color: #cfe7e1;
-/*  padding: 4em 8em;*/
+  /*  padding: 4em 8em;*/
 }
 
 /* 
@@ -769,8 +769,6 @@ canvas {
   }
 }
 
-
-
 .mobile-links {
   width: 100%;
 }
@@ -784,7 +782,7 @@ canvas {
 }
 
 .project-description {
-  font-size: 1em;
+  font-size: 0.9em;
 }
 
 .project-date {
@@ -962,4 +960,20 @@ canvas {
 .card .btn:hover {
   background-color: #1c3d34;
   border: #1c3d34 solid;
+}
+
+.project-panel:hover {
+  transform: scale(1.02);
+}
+
+.home-section .card {
+  background: #f2f2f2;
+}
+
+.slideshow-carousel .carousel-inner {
+  border-radius: 40px;
+}
+
+.slideshow-carousel img {
+  object-fit: cover;
 }
