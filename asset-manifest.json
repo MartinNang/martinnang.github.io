@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.dc5308e7.css",
-    "main.js": "/static/js/main.373db78a.js",
-    "static/js/488.7a876c9d.chunk.js": "/static/js/488.7a876c9d.chunk.js",
+    "main.css": "/static/css/main.121c8624.css",
+    "main.js": "/static/js/main.9a525823.js",
+    "static/js/488.9c92ff38.chunk.js": "/static/js/488.9c92ff38.chunk.js",
     "static/media/research_paper_gameplay.png": "/static/media/research_paper_gameplay.80a57e7d450f4135a6c6.png",
     "static/media/3dsmax.jpg": "/static/media/3dsmax.29472a45dff6de0de4b9.jpg",
-    "static/media/homepage_image1.jpg": "/static/media/homepage_image1.234935437ae8dcee34e1.jpg",
-    "static/media/homepage_image0.jpg": "/static/media/homepage_image0.5b4ba129d4b43239d693.jpg",
-    "static/media/homepage_image2.png": "/static/media/homepage_image2.58a760a047bad1a58b59.png",
+    "static/media/en-route-homepage.png": "/static/media/en-route-homepage.8a54ec0c06bc2f437886.png",
+    "static/media/chichen_itza_screens.png": "/static/media/chichen_itza_screens.ee6f5afc9db0174d3b9c.png",
     "static/media/GUeVEn.png": "/static/media/GUeVEn.9003bfeec63437525943.png",
     "static/media/repositories.jpg": "/static/media/repositories.0e2eefc1cc5013332a9a.jpg",
+    "static/media/View Event.png": "/static/media/View Event.d4d92c4c39f4f97fe3ee.png",
     "static/media/Profile.jpeg": "/static/media/Profile.ccda7d6473fb17d2b79c.jpeg",
     "static/media/doxee_logo.png": "/static/media/doxee_logo.bfa308b0bb03ec18f775.png",
     "static/media/tcd_logo.svg": "/static/media/tcd_logo.557ce21f1357fc9fe74eb37adaece07a.svg",
@@ -32,12 +32,12 @@
     "static/media/spring-svgrepo-com.svg": "/static/media/spring-svgrepo-com.acf04d1c0a137695fff363d37d383e64.svg",
     "static/media/css3-02-svgrepo-com.svg": "/static/media/css3-02-svgrepo-com.0b435e818710854aebd35efe9280f77c.svg",
     "static/media/angular-svgrepo-com.svg": "/static/media/angular-svgrepo-com.3189e15b65a3006cde6f76f917b3ce4b.svg",
-    "main.dc5308e7.css.map": "/static/css/main.dc5308e7.css.map",
-    "main.373db78a.js.map": "/static/js/main.373db78a.js.map",
-    "488.7a876c9d.chunk.js.map": "/static/js/488.7a876c9d.chunk.js.map"
+    "main.121c8624.css.map": "/static/css/main.121c8624.css.map",
+    "main.9a525823.js.map": "/static/js/main.9a525823.js.map",
+    "488.9c92ff38.chunk.js.map": "/static/js/488.9c92ff38.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dc5308e7.css",
-    "static/js/main.373db78a.js"
+    "static/css/main.121c8624.css",
+    "static/js/main.9a525823.js"
   ]
 }
