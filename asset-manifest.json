@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.121c8624.css",
-    "main.js": "/static/js/main.9a525823.js",
+    "main.js": "/static/js/main.42b5660f.js",
     "static/js/488.9c92ff38.chunk.js": "/static/js/488.9c92ff38.chunk.js",
     "static/media/research_paper_gameplay.png": "/static/media/research_paper_gameplay.80a57e7d450f4135a6c6.png",
+    "static/media/habichew.png": "/static/media/habichew.498e87e87dab835bcfdb.png",
     "static/media/3dsmax.jpg": "/static/media/3dsmax.29472a45dff6de0de4b9.jpg",
     "static/media/en-route-homepage.png": "/static/media/en-route-homepage.8a54ec0c06bc2f437886.png",
     "static/media/chichen_itza_screens.png": "/static/media/chichen_itza_screens.ee6f5afc9db0174d3b9c.png",
@@ -33,11 +34,11 @@
     "static/media/css3-02-svgrepo-com.svg": "/static/media/css3-02-svgrepo-com.0b435e818710854aebd35efe9280f77c.svg",
     "static/media/angular-svgrepo-com.svg": "/static/media/angular-svgrepo-com.3189e15b65a3006cde6f76f917b3ce4b.svg",
     "main.121c8624.css.map": "/static/css/main.121c8624.css.map",
-    "main.9a525823.js.map": "/static/js/main.9a525823.js.map",
+    "main.42b5660f.js.map": "/static/js/main.42b5660f.js.map",
     "488.9c92ff38.chunk.js.map": "/static/js/488.9c92ff38.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.121c8624.css",
-    "static/js/main.9a525823.js"
+    "static/js/main.42b5660f.js"
   ]
 }
