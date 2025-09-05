@@ -39,6 +39,7 @@ const CustomCard = ({
               }
             </Carousel>
           ) : <CardImg
+            loading={"eager"}
             variant="top"
             src={process.env.PUBLIC_URL + "/img/" + images[0]}
             alt="${name}"

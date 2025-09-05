@@ -1,6 +1,16 @@
 {
   "projects": [
     {
+      "Name": "Habichew",
+      "Status": "Complete",
+      "Date": "2025-08-29T00:00:00Z",
+      "Image": ["habichew.png"],
+      "Tags": ["UI/UX", "Rive", "React Native", "TypeScript", "Node.js", "EJS", "MySQL"],
+      "Description": [
+        "A productivity app for Android and iOS implemented in React Native and featuring a digital pet designed and imported with Rive as well as LLM-integration for task suggestions."
+      ]
+    },
+    {
       "Name": "Preserving Kenyan Oral Literature Through Environmental Storytelling",
       "Status": "Complete",
       "Date": "2025-05-15T00:00:00Z",

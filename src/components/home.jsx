@@ -38,6 +38,7 @@ import slideImg1 from "../assets/img/en-route-homepage.png";
 import slideImg2 from "../assets/img/View Event.png";
 import slideImg3 from "../assets/img/3dsmax.jpg";
 import slideImgResearch from "../assets/img/research_paper_gameplay.png";
+import slideImgProject from "../assets/img/habichew.png";
 
 const Home = () => {
   return (
@@ -279,6 +280,7 @@ const Home = () => {
               className={"home-section"}
               interval={5000}
               images={[
+                slideImgProject,
                 slideImg0,
                 slideImg1,
                 slideImg2,
